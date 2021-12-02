@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play a fun game of Rock Paper Scissors Lizard Spock. Win against the computer by being the first to reach 7 points.">
+    <meta name="description"
+        content="Play a fun game of Rock Paper Scissors Lizard Spock. Win against the computer by being the first to reach 7 points.">
     <meta name="keywords" content="Rock, Paper, Scissors, Lizard, Spock, Game, JavaScript ">
     <meta name="author" content="Bell">
 
     <!-- Font Awesome and Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet"> -->
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title></title>
@@ -21,55 +22,40 @@
     <div class="background" id="background"></div>
 
     <h1 class="heading">
-        <img class="logo" src="assets/images/logo.png" alt="logo"> Rock-Paper-Scissors-Lizard-Spock Game
+        Rock-Paper-Scissors-Lizard-Spock Game
     </h1>
 
 
 
-<div class = "scoreboards">
+    <div class="scoreboards">
 
-    <div class ="player-scoreboard">
-        <h1>Player</h1>
-        <!-- <span class="score">0</span> -->
-        <p class="score">You score<span class="score">0</span></p>
-        <p>Make your choice?</p>
-        <div class="choices">
-            <i id="rock" class="far fa-hand-rock choice"></i>
-            <i id="paper" class="far fa-hand-paper choice"></i>
-            <i id="scissors" class="far fa-hand-scissors choice"></i>
-            <i id="lizard" class="far fa-hand-lizard choice"></i>
-            <i id="spock" class="far fa-hand-spock choice"></i>
+        <div class="player-scoreboard">
+            <h1>Player</h1>
+            <p class="score">You score<span class="score"> 0 </span></p>
+            <p>Make your choice?</p>
+            <div class="choices">
+                <i id="rock" class="far fa-hand-rock choice"></i>
+                <i id="paper" class="far fa-hand-paper choice"></i>
+                <i id="scissors" class="far fa-hand-scissors choice"></i>
+                <i id="lizard" class="far fa-hand-lizard choice"></i>
+                <i id="spock" class="far fa-hand-spock choice"></i>
+            </div>
         </div>
-    </div>
 
-    <div class ="computer-scoreboard">
-        <h1>Computer</h1>
-        <!-- <span class="computer-score">0</span> -->
-        <p class="score">Computer scores<span class="computer-score">0</span></p>
-        <p>Computer chooses</p>
-        <div class="choices">
-            <i id="rock" class="far fa-hand-rock choice"></i>
-            <i id="paper" class="far fa-hand-paper choice"></i>
-            <i id="scissors" class="far fa-hand-scissors choice"></i>
-            <i id="lizard" class="far fa-hand-lizard choice"></i>
-            <i id="spock" class="far fa-hand-spock choice"></i>
+        <div class="computer-scoreboard">
+            <h1>Computer</h1>
+            <p class="score">Computer scores <span class="computer-score"> 0 </span></p>
+            <p>Computer chooses</p>
+            <div class="choices">
+                <i id="rock" class="far fa-hand-rock choice"></i>
+                <i id="paper" class="far fa-hand-paper choice"></i>
+                <i id="scissors" class="far fa-hand-scissors choice"></i>
+                <i id="lizard" class="far fa-hand-lizard choice"></i>
+                <i id="spock" class="far fa-hand-spock choice"></i>
+            </div>
         </div>
+
+        <div class="results"></div>
+        <span id="round-text"></span>
+
     </div>
-
-    <div class="results"></div>
-    <span id="round-text"></span>
-
-
-
-</div>
-
-
-
-<!-- <div class = "icons">
-    <i class="far fa-hand-rock"></i>
-    <i class="far fa-hand-paper"></i>
-    <i class="far fa-hand-scissors"></i>
-    <i class="far fa-hand-paper"></i>
-    <i class="far fa-hand-spock"></i>
-</div> -->
-
