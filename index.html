@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <div class="background" id="background"></div>
+    <div class="background" id="background" alt="christmas-trees"></div>
 
     <h1 class="heading">
         Rock-Paper-Scissors-Lizard-Spock Game
@@ -57,16 +57,42 @@
                 </div>
             </div>
 
-            <div class="results-area">
-                <p class="results">Who won results here Player or Computer<span id="round-text">0</span></p>
-                <p class="results">Who won results here Player or Computer<span id="round-text">0</span></p>
-            </div>
-            
-
         </div>
-
     </div>
+
+
+    <div class="win" style="display-block;">
+        <p>Winning Combinations are;
+            <br>
+            <i id="rock"class="far fa-hand-rock"> Crushes </i> <i id="scissors" class="far fa-hand-scissors choice"></i> & <i id="lizard" class="far fa-hand-lizard choice"></i>
+            <br>
+            <i id="paper" class="far fa-hand-paper choice"></i> Covers <i id="rock" class="far fa-hand-rock choice"></i> & Disproves <i id="spock" class="far fa-hand-spock choice"></i>
+            <br>
+            <i id="scissors" class="far fa-hand-scissors choice"></i> Cuts <i id="paper" class="far fa-hand-paper choice"></i> & Decapitates a <i id="lizard" class="far fa-hand-lizard choice"></i>
+            <br>
+            <i id="lizard" class="far fa-hand-lizard choice"></i> Poisons <i id="spock" class="far fa-hand-spock choice"></i> & Eats <i id="paper" class="far fa-hand-paper choice"></i>
+            <br>
+            <i id="spock" class="far fa-hand-spock choice"></i> Smashes <i id="scissors" class="far fa-hand-scissors choice"></i> & Vapourises <i id="rock" class="far fa-hand-rock choice"></i>
+            <br>
+        </p>
+    </div>
+
+    <div class="how-to-play">
+        <h2>How to Play</h2>
+        <p>Choose a shape of hand that you want to play against the Computer. Click on the image to start the game.
+            Remember choose wisely it is best of 7 go's for you to beat the Computer. </p>
+    </div>
+    
+    <div class="rules">
+        <button class="rules-button">Rules</button>
+    </div>
+   
+
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/6f8f3d395c.js" crossorigin="anonymous"></script>
+
 
     <script src="assets/jss/script.js"></script>
 </body>
+
 </html>
