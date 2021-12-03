@@ -35,3 +35,37 @@
 
 } */
 
+h1.heading {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.game-area {
+    box-sizing: border-box;
+    width: 85%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.player-scoreboard {
+        box-sizing: border-box;
+        width: 85%;
+        height: 65vh;
+        max-height: 450px;
+        max-width: 830px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1%;
+}
+
+.player-scoreboard {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
