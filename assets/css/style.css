@@ -16,14 +16,41 @@
 
 * body {
     /* background-image: url(../images/vecteezy_christmas-trees-background_.jpg); */
-    background-image: url(../images/vecteezy_mountain-winter-view-christmas-tree-background_.jpg);
-    background-size:cover;
+
+    /* background-image: url(../images/vecteezy_mountain-winter-view-christmas-tree-background_.jpg);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    overflow: hidden; */
+/* 
+    position:relative; */
+    color: var(--text);
+}
+
+/* https://www.w3schools.com/howto/howto_css_blurred_background.asp */
+#background {
+    background-image: url(../images/vecteezy_mountain-winter-view-christmas-tree-background_.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     width: 100vw;
     overflow: hidden;
-    position:relative;
-    color: var(--text);
+    -webkit-filter: blur(2px);
+    z-index: 2; 
+}
+
+.foreground {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -49%);
+    z-index: 2;
+    width: 85%;
+    padding: 20px;
+    text-align: center;
 }
 
 h1.heading {
@@ -88,14 +115,11 @@ font-size: 5rem;
     border: 5px solid;
     border-radius: 15px;
     background-color: aliceblue;
-    padding: 20 20;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    padding: 20,0 20 0;
-    bottom: 20px;
-    left: 40px;
+    left: auto;
     position: absolute;
 }
 
