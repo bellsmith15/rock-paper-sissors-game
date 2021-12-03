@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Festive&family=Mountains+of+Christmas:wght@700&display=swap');
 
-
 * {
     margin:0;
     padding:0;
@@ -9,7 +8,8 @@
 }
 
 :root {
-    --text: #F7F7F7;
+    /* --text: #F7F7F7; */
+    --text: #171515;
 }
 
 * body {
@@ -23,21 +23,9 @@
     color: var(--text);
 }
 
-/* 
-.background {
-    background-image: url(../images/vecteezy_christmas-trees-background_.jpg);
-    background-size:cover;
-    background-position: center;
-    min-height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    position:relative;
-
-} */
-
 h1.heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .game-area {
@@ -62,7 +50,7 @@ h1.heading {
         padding: 1%;
 }
 
-.player-scoreboard {
+.computer-scoreboard {
     height: 100%;
     justify-content: center;
     display: flex;
