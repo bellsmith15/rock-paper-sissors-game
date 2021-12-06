@@ -1,6 +1,4 @@
-// const startBtn = document.getElementById('rules');
-// startBtn.addEventListener('click', playGame);
-
+// START
 
 const playerChoices = document.getElementsByClassName('choice');
 const roundText = document.getElementById('round-text');
@@ -17,16 +15,21 @@ let playerScore = 0;
 let computerScore = 0;
 
 
-const rulesModal = document.getElementsByClassName('rules-modal')[0];
-rulesModal = document.getElementById("")
+// const rulesModal = document.getElementsByClassName('rules-modal')[0];
+// rulesModal = document.getElementById("")
 
-function openRulesModal(){
-    openrulesModal.style.display = "block";
-}
+// function openRulesModal(){
+//     openrulesModal.style.display = "block";
+// }
 
-function closeRulesModal(){
-    openrulesModal.style.display = "none";
-}
+// function closeRulesModal(){
+//     openrulesModal.style.display = "none";
+// }
+
+// openBtn.addEventListener('click', () => {
+//     closeModal(rulesModal);
+// });
+
 
 
 
@@ -36,17 +39,8 @@ for (let choice of playerChoices) {
 }
 
 closeBtn.addEventListener('click', () => {
-    closeModal(rulesModal);
+    closeModal(winnerModal);
 });
-
-
-
-
-openBtn.addEventListener('click', () => {
-    closeModal(rulesModal);
-});
-
-
 
 
 function playGame(e) {
@@ -141,9 +135,4 @@ function resetGame(player, computer) {
     roundText.innerHTML = '';
     document.getElementById('computer-icon').className = '';
 }
-
-
-
-
-
 
