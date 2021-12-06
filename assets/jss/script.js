@@ -1,6 +1,7 @@
 // const startBtn = document.getElementById('rules');
 // startBtn.addEventListener('click', playGame);
 
+
 const playerChoices = document.getElementsByClassName('choice');
 const roundText = document.getElementById('round-text');
 const closeBtn = document.getElementsByClassName('close')[0];
