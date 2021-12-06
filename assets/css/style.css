@@ -192,9 +192,30 @@ i#computer-icon {
 
 /* WORK this out */
 /* Inspiration from W3Schools modal layout. */
+
+
+/* https://www.w3schools.com/howto/howto_css_modals.asp */
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+
 .modal-content {
     position: relative;
-    background-color: #f1d68b;
+    background-color:rgb(176, 235, 39)
     text-align: center;
     color: black;
     margin: 15% auto;
@@ -217,6 +238,24 @@ i#computer-icon {
 }
 
 
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+/* was this but above is W3 ref:
 .close {
     color: black;
     position: absolute;
@@ -224,7 +263,7 @@ i#computer-icon {
     top: 10px;
     font-size: 2rem;
     font-weight: bold;
-}
+} */
 
 h3 {
     display: block;
