@@ -1,3 +1,72 @@
+# PORTFOLIO PROJECT - 2
+
+# ONE STOP CLOCK
+
+## PURPOSE
+
+'One Stop Clock' is a game where your reaction timing is key. Test your reactions by trying to get the timer as close to zero as possible with the use of the three buttons, Start, Stop and Reset.
+* [Here is a link to the final project](https://chr15w1986.github.io/Javascript_PP2/)
+## FINAL DESIGN
+
+![Final project image home page](assets/testing/finaldesign.png)
+
+## INITIAL IDEA CONCEPT
+
+My initial idea for the project was to create a game that is simple to use and competitive. The game is for all ages and skill levels.
+I chose to make the game quite bright and fun looking with yellows and blues.
+I made the game for Mobile first so that is works on all screen sizes.
+
+* The Features I wanted the game to have are:
+
+    * To have simple to read rules.
+    * Have a contrasting colour scheme (Light blue and Yellow with Dark-Grey text)
+    * Have a simple layout with 3 clear buttons with corresponding colours 
+    * Look fun with images, and be educational
+#  
+## CONTENTS
+
+- [PORTFOLIO PROJECT - 2](#portfolio-project---2)
+- [ONE STOP CLOCK](#one-stop-clock)
+  - [PURPOSE](#purpose)
+  - [FINAL DESIGN](#final-design)
+  - [INITIAL IDEA CONCEPT](#initial-idea-concept)
+- [](#)
+  - [CONTENTS](#contents)
+- [UX/UI](#uxui)
+  - [USER STORIES](#user-stories)
+  - [WIREFRAMES](#wireframes)
+  - [FEATURES](#features)
+  - [DESIGN](#design)
+- [](#-1)
+- [TESTING](#testing)
+  - [DEVICES](#devices)
+  - [Validators](#validators)
+  - [Lighthouse](#lighthouse)
+  - [Game](#game)
+  - [Accessibility](#accessibility)
+  - [SOLVED BUGS AND ERRORS](#solved-bugs-and-errors)
+  - [UNSOLVED BUGS OR ERRORS](#unsolved-bugs-or-errors)
+  - [FUNCTIONALITY](#functionality)
+- [TECHNOLOGIES USED](#technologies-used)
+  - [PROGRAMS USED](#programs-used)
+- [DEPLOYMENT](#deployment)
+  - [REMOTE DEPLOYMENT:](#remote-deployment)
+  - [HOW TO FORK A REPOSITORY:](#how-to-fork-a-repository)
+  - [HOW TO CLONE A REPOSITORY:](#how-to-clone-a-repository)
+  - [HOW TO MAKE A LOCAL CLONE](#how-to-make-a-local-clone)
+  - [CREDITS AND REFERENCES](#credits-and-references)
+    - [IMAGES AND INFORMATION](#images-and-information)
+    - [CODE](#code)
+  - [ACKNOWLEDGEMENTS:](#acknowledgements)
+      - [RETURN TO THE TOP](#return-to-the-top)
+
+- [CREDITS](#credits-and-references)
+  * [IMAGES AND INFORMATION](#images-and-information)
+  * [CODE](#code)
+- [ACKNOWLEDGEMENTS](#acknowledgements)
+
+
+
 Introduction
  is a web based game built in JavaScript, HTML and CSS. It is based on the classic game of Rock Paper Scissors and incorporates the modern Rock Paper Scissor Lizard Spock variant. It is targetted towards users who would like a short fun game to play.
 

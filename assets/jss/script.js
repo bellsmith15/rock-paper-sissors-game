@@ -16,6 +16,18 @@ let playerScore = 0;
 let computerScore = 0;
 
 
+ruleModal = document.getElementById("")
+
+function openRulesModal(){
+    openRulesModal.style.display = "block";
+}
+
+function closeRulesModal(){
+    openRulesModal.style.display = "none";
+}
+
+
+
 
 for (let choice of playerChoices) {
     choice.addEventListener('click', playGame);
