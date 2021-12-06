@@ -132,7 +132,8 @@ function resetGame(player, computer) {
     computerScore = 0;
     player.innerHTML = playerScore;
     computer.innerHTML = computerScore;
-    roundText.innerHTML = '';
+    // roundText.innerHTML = '';
+    // document.getElementById('computer-icon').className = `far fa-hand-spock`;
     // document.getElementById('computer-icon').className = '....';
 }
 
