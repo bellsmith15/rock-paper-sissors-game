@@ -4,6 +4,12 @@
 const playerChoices = document.getElementsByClassName('choice');
 const roundText = document.getElementById('round-text');
 const closeBtn = document.getElementsByClassName('close')[0];
+
+
+const openBtn = document.getElementsByClassName('open')[0];
+const rulesModal = document.getElementsByClassName('rules-modal')[0];
+
+
 const winnerModal = document.getElementsByClassName('winner-modal')[0];
 const modalHeader = document.getElementsByClassName('modal-header')[0];
 const modalParagraph = document.getElementsByClassName('modal-result')[0];
@@ -127,7 +133,7 @@ function resetGame(player, computer) {
     player.innerHTML = playerScore;
     computer.innerHTML = computerScore;
     roundText.innerHTML = '';
-    document.getElementById('computer-icon').className = `fas fa-question`;
+    // document.getElementById('computer-icon').className = '....';
 }
 
 

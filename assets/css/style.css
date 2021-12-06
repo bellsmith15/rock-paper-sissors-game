@@ -215,12 +215,12 @@ i#computer-icon {
 
 .modal-content {
     position: relative;
-    background-color:rgb(176, 235, 39)
+    background-color: aliceblue;
     text-align: center;
     color: black;
     margin: 15% auto;
     padding: 3rem;
-    border: 3px solid white;
+    border: 3px solid black;
     width: 80%;
 }
 
@@ -239,6 +239,32 @@ i#computer-icon {
 
 
 
+
+.rules-content {
+    position: relative;
+    background-color: aliceblue;
+    text-align: center;
+    color: black;
+    margin: 15% auto;
+    padding: 3rem;
+    border: 3px solid black;
+    width: 80%;
+}
+
+/* Inspiration from W3Schools modal layout. */
+.rules-modal {
+    display: none; /* Modal is hidden by default */
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
 /* The Close Button */
 .close {
     color: #aaaaaa;
@@ -253,6 +279,23 @@ i#computer-icon {
     text-decoration: none;
     cursor: pointer;
   }
+
+
+
+  .open {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .open:hover,
+  .open:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 
 
 /* was this but above is W3 ref:
