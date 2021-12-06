@@ -6,6 +6,7 @@ const roundText = document.getElementById('round-text');
 const closeBtn = document.getElementsByClassName('close')[0];
 
 
+
 const openBtn = document.getElementsByClassName('open')[0];
 const rulesModal = document.getElementsByClassName('rules-modal')[0];
 
@@ -40,6 +41,10 @@ for (let choice of playerChoices) {
 }
 
 closeBtn.addEventListener('click', () => {
+    closeModal(winnerModal);
+});
+
+openBtn.addEventListener('click', () => {
     closeModal(winnerModal);
 });
 
@@ -132,10 +137,11 @@ function resetGame(player, computer) {
     computerScore = 0;
     player.innerHTML = playerScore;
     computer.innerHTML = computerScore;
-    // roundText.innerHTML = '';
-    // document.getElementById('computer-icon').className = `far fa-hand-spock`;
-    // document.getElementById('computer-icon').className = '....';
+    roundText.innerHTML = '';
+    document.getElementById('computer-icon').className = '';
 }
+    // document.getElementById('computer-icon').className = `far fa-hand-spock`;
+
 
 
 
