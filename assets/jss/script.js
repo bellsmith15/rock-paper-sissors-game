@@ -4,13 +4,6 @@
 const playerChoices = document.getElementsByClassName('choice');
 const roundText = document.getElementById('round-text');
 const closeBtn = document.getElementsByClassName('close')[0];
-
-
-
-const openBtn = document.getElementsByClassName('open')[0];
-const rulesModal = document.getElementsByClassName('rules-modal')[0];
-
-
 const winnerModal = document.getElementsByClassName('winner-modal')[0];
 const modalHeader = document.getElementsByClassName('modal-header')[0];
 const modalParagraph = document.getElementsByClassName('modal-result')[0];
@@ -23,14 +16,15 @@ let playerScore = 0;
 let computerScore = 0;
 
 
-ruleModal = document.getElementById("")
+const rulesModal = document.getElementsByClassName('rules-modal')[0];
+rulesModal = document.getElementById("")
 
 function openRulesModal(){
-    openRulesModal.style.display = "block";
+    openrulesModal.style.display = "block";
 }
 
 function closeRulesModal(){
-    openRulesModal.style.display = "none";
+    openrulesModal.style.display = "none";
 }
 
 
@@ -41,12 +35,18 @@ for (let choice of playerChoices) {
 }
 
 closeBtn.addEventListener('click', () => {
-    closeModal(winnerModal);
+    closeModal(rulesModal);
 });
 
+
+
+
 openBtn.addEventListener('click', () => {
-    closeModal(winnerModal);
+    closeModal(rulesModal);
 });
+
+
+
 
 function playGame(e) {
     playerChoice = e.target.id;
@@ -140,7 +140,6 @@ function resetGame(player, computer) {
     roundText.innerHTML = '';
     document.getElementById('computer-icon').className = '';
 }
-    // document.getElementById('computer-icon').className = `far fa-hand-spock`;
 
 
 
