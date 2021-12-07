@@ -116,11 +116,11 @@ function incrementComputerScore(score) {
 function showWinner(winnerModal, modalHeader, modalParagraph) {
     if (playerScore === 3) {
         winnerModal.style.display = 'block';
-        modalHeader.textContent = 'You Win The Game!';
+        modalHeader.textContent = 'You Beat the Computer!';
         modalParagraph.textContent = `You: ${playerScore} > Computer: ${computerScore}`;
     } else if (computerScore === 3) {
         winnerModal.style.display = 'block';
-        modalHeader.textContent = 'You Lose The Game!';
+        modalHeader.textContent = 'You just Lost The Game!';
         modalParagraph.textContent = `Computer: ${computerScore} > You: ${playerScore}`;
     }
 }
@@ -140,10 +140,7 @@ function resetGame(player, computer) {
 }
 
 
-
-// function showRules (rulesModal) {
-//     rulesModal.style.display = 'block';
-// }
+// https://www.w3schools.com/howto/howto_css_modals.asp
 
 // Get the modal
 var modal = document.getElementById("myModal");

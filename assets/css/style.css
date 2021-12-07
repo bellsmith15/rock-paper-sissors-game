@@ -122,10 +122,12 @@ p {
 
 .choice:hover {
     transform: scale(1.3);
+    color: blue;
 }
 
 i#computer-icon {
     transform: scale(1.3);
+    color:blue;
 }
 
 #rock,
@@ -151,18 +153,6 @@ i#computer-icon {
     margin-bottom: 20PX;
 }
 
-
-.rules {
-    border: 5px solid;
-    border-radius: 15px;
-    background-color: aliceblue;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    left: auto;
-    position: absolute;
-}
 
 .rules {
     border: 5px solid;
