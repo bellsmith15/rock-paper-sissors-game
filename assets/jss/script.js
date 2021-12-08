@@ -99,7 +99,7 @@ function getResult() {
         case 'scissorsscissors':
         case 'lizardlizard':
         case 'spockspock':
-            roundText.innerHTML = 'Its a Draw ';
+            roundText.innerHTML = 'Its a Draw!';
             break;
     }
 }
