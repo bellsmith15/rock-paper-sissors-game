@@ -139,7 +139,7 @@ i {
 
 i#computer-icon {
     transform: scale(1.3);
-    color:rgb(87, 102, 1);
+    color:rgbb(131, 118, 0);
 }
 
 /* #rock,
@@ -150,7 +150,7 @@ i#computer-icon {
 .round-results {
     padding-bottom: 32px;
     padding-top: 10px;
-    color:rgb(179, 161, 0);
+    color:rgb(131, 118, 0);
 }
 
 .win {

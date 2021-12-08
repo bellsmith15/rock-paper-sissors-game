@@ -134,11 +134,11 @@ function showWinner(winnerModal, modalHeader, modalParagraph) {
     if (playerScore === 3) {
         winnerModal.style.display = 'block';
         modalHeader.textContent = 'You Beat the Computer!';
-        modalParagraph.textContent = `Player = ${playerScore} vs. Computer = ${computerScore}`;
+        modalParagraph.textContent = `${playerScore} vs. ${computerScore}`;
     } else if (computerScore === 3) {
         winnerModal.style.display = 'block';
         modalHeader.textContent = 'You just Lost The Game!';
-        modalParagraph.textContent = `Computer = ${computerScore} vs. Player = ${playerScore}`;
+        modalParagraph.textContent = `${computerScore} vs. ${playerScore}`;
     }
 }
 
