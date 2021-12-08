@@ -5,6 +5,7 @@
     padding: 0;
     font-family: "Mountains of Christmas", sans-serif;
     font-size: 35px;
+    background-color: aliceblue;
     /* font-size: 40px; */
 }
 
@@ -63,9 +64,10 @@ p {
     font-size: 0.9rem;
 }
 
-/* i {
-    font-size: 0.7rem;
-} */
+i {
+    /* font-size: 0.7rem; */
+    transition: 100ms;
+}
 
 
 .btn {
@@ -79,6 +81,15 @@ p {
     left: auto;
     /* position: absolute; */
 }
+
+
+/* div#game-screen {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+} */
 
 .game-area {
     box-sizing: border-box;
@@ -94,6 +105,7 @@ p {
 .scoreboards {
     display: flex;
     height: 4.5rem;
+    justify-content: center;
 }
 
 .player-scoreboard {
@@ -122,22 +134,23 @@ p {
 
 .choice:hover {
     transform: scale(1.3);
-    color: blue;
+    color: rgb(179, 161, 0);
 }
 
 i#computer-icon {
     transform: scale(1.3);
-    color:blue;
+    color:rgb(87, 102, 1);
 }
 
 #rock,
 #far {
-    color: blueviolet;
+    /* color: blueviolet; */
 }
 
 .round-results {
     padding-bottom: 32px;
     padding-top: 10px;
+    color:rgb(179, 161, 0);
 }
 
 .win {

@@ -1,7 +1,7 @@
 // START
 
 const playerChoices = document.getElementsByClassName('choice');
-const roundText = document.getElementById('round-text');
+const roundText = document.getElementById('round-text'); /*resultDisplay*/
 const closeBtn = document.getElementsByClassName('close')[0];
 
 const openBtn = document.getElementsByClassName('open')[0];
@@ -65,6 +65,7 @@ function displayComputerChoice() {
     computerIcon.className = `far fa-hand-${computerChoice}`;
 }
 
+/*https://www.w3schools.com/js/js_switch.asp*/
 function getResult() {
     switch (playerChoice + computerChoice) {
         case 'rockscissors':
@@ -78,7 +79,7 @@ function getResult() {
         case 'spockscissors':
         case 'spockrock':
             console.log('You win!');
-            roundText.innerHTML = 'You Win this Round!';
+            roundText.innerHTML = "You Win this Round!"; /*resultDisplay*/
             incrementPlayerScore(scoreHTML);
             break;
         case 'scissorsrock':
@@ -91,7 +92,7 @@ function getResult() {
         case 'spocklizard':
         case 'scissorsspock':
         case 'rockspock':
-            roundText.innerHTML = 'You lose, the Computer Wins this Round!';
+            roundText.innerHTML = "You lose, the Computer Wins this Round!";
             incrementComputerScore(computerHTML);
             break;
         case 'rockrock':
@@ -99,7 +100,7 @@ function getResult() {
         case 'scissorsscissors':
         case 'lizardlizard':
         case 'spockspock':
-            roundText.innerHTML = 'Its a Draw!';
+            roundText.innerHTML = "Its a Draw!";
             break;
     }
 }
