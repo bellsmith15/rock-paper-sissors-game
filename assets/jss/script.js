@@ -18,6 +18,38 @@ let playerScore = 0;
 let computerScore = 0;
 
 
+
+
+let toggleAudio = document.getElementById('audio');
+
+// Game audio variables.
+const clickSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
+const winSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
+const loseSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
+// const winSound = new Audio('assets/sounds/winner.mp3');
+// const loseSound = new Audio('assets/sounds/lose.mp3');
+
+function playMusic (e) {
+    clickSound.play();
+}
+
+toggleAudio.addEventListener('click', (e) => {
+    if (clickSound.muted === false && winSound.muted === false && loseSound.muted === false) {
+        e.target.style.color = 'red';
+        e.target.className = 'fas fa-volume-mute';
+        clickSound.muted = true;
+        winSound.muted = true;
+        loseSound.muted = true;
+    } else {
+        e.target.style.color = 'white';
+        e.target.className = 'fas fa-volume-up';
+        clickSound.muted = false;
+        winSound.muted = false;
+        loseSound.muted = false;
+    }
+});
+
+
 // const rulesModal = document.getElementsByClassName('rules-modal')[0];
 // rulesModal = document.getElementById("")
 
@@ -66,6 +98,7 @@ function displayComputerChoice() {
 }
 
 /*https://www.w3schools.com/js/js_switch.asp*/
+/*youtube tutorials*/
 function getResult() {
     switch (playerChoice + computerChoice) {
         case 'rockscissors':
@@ -118,11 +151,11 @@ function showWinner(winnerModal, modalHeader, modalParagraph) {
     if (playerScore === 3) {
         winnerModal.style.display = 'block';
         modalHeader.textContent = 'You Beat the Computer!';
-        modalParagraph.textContent = `You: ${playerScore} > Computer: ${computerScore}`;
+        modalParagraph.textContent = `Player = ${playerScore} vs. Computer = ${computerScore}`;
     } else if (computerScore === 3) {
         winnerModal.style.display = 'block';
         modalHeader.textContent = 'You just Lost The Game!';
-        modalParagraph.textContent = `Computer: ${computerScore} > You: ${playerScore}`;
+        modalParagraph.textContent = `Computer = ${computerScore} vs. Player = ${playerScore}`;
     }
 }
 
