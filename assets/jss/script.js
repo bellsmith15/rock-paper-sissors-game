@@ -20,34 +20,36 @@ let computerScore = 0;
 
 
 
-let toggleAudio = document.getElementById('audio');
+// let toggleAudio = document.getElementById('audio');
 
 // Game audio variables.
-const clickSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
-const winSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
-const loseSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
+
+// const clickSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
+// const winSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
+// const loseSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
+
 // const winSound = new Audio('assets/sounds/winner.mp3');
 // const loseSound = new Audio('assets/sounds/lose.mp3');
 
-function playMusic (e) {
-    clickSound.play();
-}
+// function playMusic (e) {
+//     clickSound.play();
+// }
 
-toggleAudio.addEventListener('click', (e) => {
-    if (clickSound.muted === false && winSound.muted === false && loseSound.muted === false) {
-        e.target.style.color = 'red';
-        e.target.className = 'fas fa-volume-mute';
-        clickSound.muted = true;
-        winSound.muted = true;
-        loseSound.muted = true;
-    } else {
-        e.target.style.color = 'white';
-        e.target.className = 'fas fa-volume-up';
-        clickSound.muted = false;
-        winSound.muted = false;
-        loseSound.muted = false;
-    }
-});
+// toggleAudio.addEventListener('click', (e) => {
+//     if (clickSound.muted === false && winSound.muted === false && loseSound.muted === false) {
+//         e.target.style.color = 'red';
+//         e.target.className = 'fas fa-volume-mute';
+//         clickSound.muted = true;
+//         winSound.muted = true;
+//         loseSound.muted = true;
+//     } else {
+//         e.target.style.color = 'white';
+//         e.target.className = 'fas fa-volume-up';
+//         clickSound.muted = false;
+//         winSound.muted = false;
+//         loseSound.muted = false;
+//     }
+// });
 
 
 // const rulesModal = document.getElementsByClassName('rules-modal')[0];
