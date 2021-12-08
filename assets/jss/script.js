@@ -17,59 +17,8 @@ let computerHTML = document.getElementsByClassName('comp-score')[0];
 let playerScore = 0;
 let computerScore = 0;
 
-let toggleAudio = document.getElementById('audio');
-const clickSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
-const winSound = new Audio("assets/music/jingle-bells-11295.mp3");
-const loseSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
 
-toggleAudio.addEventListener('click', (e) => {
-    if (clickSound.muted === false && winSound.muted === false && loseSound.muted === false) {
-        e.target.style.color = 'red';
-        e.target.className = 'fas fa-volume-mute';
-        clickSound.muted = true;
-        winSound.muted = true;
-        loseSound.muted = true;
-    } else {
-        e.target.style.color = 'blue';
-        e.target.className = 'fas fa-volume-up';
-        clickSound.muted = false;
-        winSound.muted = false;
-        loseSound.muted = false;
-    }
-});
-
-// let playMusic =document.getElementById('audio')
-// function playMusic(){
-//     clickSound.play();
-// }
-
-
-
-// let toggleAudio = document.getElementById('audio');
-
-// Game audio variables.
-// const clickSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
-// const winSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
-// const loseSound = new Audio('assets/music/christmas-magic-night-11648.mp3');
-
-// const winSound = new Audio('assets/sounds/winner.mp3');
-// const loseSound = new Audio('assets/sounds/lose.mp3');
-
-// toggleAudio.addEventListener('click', (e) => {
-//     if (clickSound.muted === false && winSound.muted === false && loseSound.muted === false) {
-//         e.target.style.color = 'red';
-//         e.target.className = 'fas fa-volume-mute';
-//         clickSound.muted = true;
-//         winSound.muted = true;
-//         loseSound.muted = true;
-//     } else {
-//         e.target.style.color = 'white';
-//         e.target.className = 'fas fa-volume-up';
-//         clickSound.muted = false;
-//         winSound.muted = false;
-//         loseSound.muted = false;
-//     }
-// });
+const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
 
 
 for (let choice of playerChoices) {
@@ -86,6 +35,7 @@ function playGame(e) {
     generateComputerChoice();
     getResult();
     showWinner(winnerModal, modalHeader, modalParagraph);
+    musicSound.play();
 }
 
 function generateComputerChoice() {
