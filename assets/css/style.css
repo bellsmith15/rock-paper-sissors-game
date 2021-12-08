@@ -142,10 +142,10 @@ i#computer-icon {
     color:rgb(87, 102, 1);
 }
 
-#rock,
+/* #rock,
 #far {
-    /* color: blueviolet; */
-}
+    color: blueviolet;
+} */
 
 .round-results {
     padding-bottom: 32px;
