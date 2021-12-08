@@ -46,7 +46,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 
-function playGame(e) {
+function playGame(event) {
     playerChoice = e.target.id;
     generateComputerChoice();
     getResult();
@@ -91,7 +91,7 @@ function getResult() {
         case 'spocklizard':
         case 'scissorsspock':
         case 'rockspock':
-            roundText.innerHTML = 'Computer Wins this Round!';
+            roundText.innerHTML = 'You lose, the Computer Wins this Round!';
             incrementComputerScore(computerHTML);
             break;
         case 'rockrock':
@@ -99,7 +99,7 @@ function getResult() {
         case 'scissorsscissors':
         case 'lizardlizard':
         case 'spockspock':
-            roundText.innerHTML = 'Draw!';
+            roundText.innerHTML = 'Its a Draw ';
             break;
     }
 }
