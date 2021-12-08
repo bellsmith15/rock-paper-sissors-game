@@ -12,7 +12,8 @@
     <!-- Font Awesome and Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title></title>
@@ -34,7 +35,7 @@
         <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg"></i> -->
 
 
-    <audio controls>
+    <audio controls loop>
         <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg">
     </audio>
 
@@ -42,11 +43,24 @@
         <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg"></i>
 
 
-    <audio>
+    <audio id="myAudio">
         <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg">Your browser does not support the audio element.
     </audio>
+
     <button onclick="playAudio" type="button">Play</button>
     <button onclick="pauseAudio" type="button">Pause</button>
+
+    <script>
+        let music = document.getElementById("myAudio"); 
+        
+        function playAudio() { 
+          music.play(); 
+        } 
+        
+        function pauseAudio() { 
+          music.pause(); 
+        } 
+    </script>
 
 
     <!-- <button onclick='play'>Play Xmas</button> -->

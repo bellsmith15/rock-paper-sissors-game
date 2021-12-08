@@ -18,7 +18,37 @@ let playerScore = 0;
 let computerScore = 0;
 
 
-const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
+// const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
+
+// function playMusic() {
+//     musicSound.play();
+// }
+
+// function stopMusic() {
+//     musicSound.muted();
+// }
+
+
+// var x = document.getElementById("myAudio"); 
+
+// function playAudio() { 
+//   x.play(); 
+// } 
+
+// function pauseAudio() { 
+//   x.pause(); 
+// } 
+
+
+// let xmas = document.getElementById("myAudio"); 
+        
+// function playAudio() { 
+//   xmas.play(); 
+// } 
+
+// function pauseAudio() { 
+//   xmas.pause(); 
+// } 
 
 
 for (let choice of playerChoices) {
@@ -35,7 +65,7 @@ function playGame(e) {
     generateComputerChoice();
     getResult();
     showWinner(winnerModal, modalHeader, modalParagraph);
-    musicSound.play();
+    // musicSound.play();
 }
 
 function generateComputerChoice() {
