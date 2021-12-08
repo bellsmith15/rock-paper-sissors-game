@@ -80,7 +80,7 @@ closeBtn.addEventListener('click', () => {
 });
 
 
-function playGame(event) {
+function playGame(e) {
     playerChoice = e.target.id;
     generateComputerChoice();
     getResult();
