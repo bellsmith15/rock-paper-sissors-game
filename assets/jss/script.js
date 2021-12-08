@@ -18,7 +18,7 @@ let playerScore = 0;
 let computerScore = 0;
 
 
-// const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
+const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
 
 // function playMusic() {
 //     musicSound.play();
@@ -65,7 +65,7 @@ function playGame(e) {
     generateComputerChoice();
     getResult();
     showWinner(winnerModal, modalHeader, modalParagraph);
-    // musicSound.play();
+    musicSound.play();
 }
 
 function generateComputerChoice() {
