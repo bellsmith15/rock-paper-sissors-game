@@ -7,8 +7,8 @@ const closeBtn = document.getElementsByClassName('close')[0];
 const openBtn = document.getElementsByClassName('open')[0];
 
 const winnerModal = document.getElementsByClassName('winner-modal')[0];
-const modalHeader = document.getElementsByClassName('modal-header')[0];
-const modalParagraph = document.getElementsByClassName('modal-result')[0];
+const modalAnswer = document.getElementsByClassName('modal-answer')[0];
+const modalDisplay = document.getElementsByClassName('modal-display')[0];
 
 let playerChoice;
 let computerChoice;
@@ -64,7 +64,7 @@ function playGame(e) {
     playerChoice = e.target.id;
     generateComputerChoice();
     getResult();
-    showWinner(winnerModal, modalHeader, modalParagraph);
+    showWinner(winnerModal, modalAnswer, modalDisplay);
     musicSound.play();
 }
 
@@ -130,15 +130,15 @@ function incrementComputerScore(score) {
 }
 
 
-function showWinner(winnerModal, modalHeader, modalParagraph) {
+function showWinner(winnerModal, modalAnswer, modalDisplay) {
     if (playerScore === 3) {
         winnerModal.style.display = 'block';
-        modalHeader.textContent = 'You Beat the Computer!';
-        modalParagraph.textContent = `${playerScore} vs. ${computerScore}`;
+        modalAnswer.textContent = 'You Beat the Computer!';
+        modalDisplay.textContent = `${playerScore} vs. ${computerScore}`;
     } else if (computerScore === 3) {
         winnerModal.style.display = 'block';
-        modalHeader.textContent = 'You just Lost The Game!';
-        modalParagraph.textContent = `${computerScore} vs. ${playerScore}`;
+        modalAnswer.textContent = 'You just Lost The Game!';
+        modalDisplay.textContent = `${computerScore} vs. ${playerScore}`;
     }
 }
 
@@ -152,7 +152,7 @@ function resetGame(player, computer) {
     computerScore = 0;
     player.innerHTML = playerScore;
     computer.innerHTML = computerScore;
-    roundText.innerHTML = '';
+    roundAnswer.innerHTML = '';
     document.getElementById('computer-icon').className = '';
 }
 
@@ -160,13 +160,13 @@ function resetGame(player, computer) {
 // https://www.w3schools.com/howto/howto_css_modals.asp
 
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+let btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -182,7 +182,6 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
-    musicSound.muted();
   }
 }
 
