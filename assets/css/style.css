@@ -141,6 +141,10 @@ i#computer-icon {
     color:rgb(212, 89, 0)
 }
 
+span#round-answer {
+    color:rgb(212, 89, 0)
+}
+
 .win {
     border: 5px solid;
     border-radius: 15px;
