@@ -105,7 +105,7 @@ There will be a modal that will appear on the screen that will display who has w
 User Story:
 * `As a user, I want to have some atmosphere included with some music.`
 Acceptance Criteria:
-It should clear that a user can play audio music with a christmas theme whislt playing.
+It should clear that a user can play audio music with a christmas theme whislt playing. https://pixabay.com/music/search/genre/christmas/
 Implementation:
 An icon will be on the page to allow the user to toggle the audio on the game either on or off.
 
