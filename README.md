@@ -30,6 +30,7 @@ My initial idea for the project was to create a game that is simple to use and c
   - [FINAL DESIGN](#final-design)
   - [INITIAL IDEA CONCEPT](#initial-idea-concept)
 - [](#)
+
   - [CONTENTS](#contents)
   - [UX/UI](#uxui)
   - [USER STORIES](#user-stories)
@@ -37,6 +38,7 @@ My initial idea for the project was to create a game that is simple to use and c
   - [FEATURES](#features)
   - [DESIGN](#design)
 - [](#-1)
+
 - [TESTING](#testing)
   - [DEVICES](#devices)
   - [Validators](#validators)
@@ -46,22 +48,21 @@ My initial idea for the project was to create a game that is simple to use and c
   - [SOLVED BUGS AND ERRORS](#solved-bugs-and-errors)
   - [UNSOLVED BUGS OR ERRORS](#unsolved-bugs-or-errors)
   - [FUNCTIONALITY](#functionality)
+
 - [TECHNOLOGIES USED](#technologies-used)
   - [PROGRAMS USED](#programs-used)
+
 - [DEPLOYMENT](#deployment)
-  - [REMOTE DEPLOYMENT:](#remote-deployment)
-  - [HOW TO FORK A REPOSITORY:](#how-to-fork-a-repository)
-  - [HOW TO CLONE A REPOSITORY:](#how-to-clone-a-repository)
-  - [HOW TO MAKE A LOCAL CLONE](#how-to-make-a-local-clone)
-  - [CREDITS AND REFERENCES](#credits-and-references)
+
+  <!-- - [CREDITS AND REFERENCES](#credits-and-references)
     - [IMAGES AND INFORMATION](#images-and-information)
     - [CODE](#code)
   - [ACKNOWLEDGEMENTS:](#acknowledgements)
-      - [RETURN TO THE TOP](#return-to-the-top)
+      - [RETURN TO THE TOP](#return-to-the-top) -->
 
 - [CREDITS](#credits-and-references)
-  * [IMAGES AND INFORMATION](#images-and-information)
-  * [CODE](#code)
+  <!-- * [IMAGES AND INFORMATION](#images-and-information)
+  * [CODE](#code) -->
 - [ACKNOWLEDGEMENTS](#acknowledgements)
 
 
@@ -175,6 +176,15 @@ Leaderboard - It would be nice for a player to enter their name and that their s
 Snoweffect - I tried to have an animation of snow running 
 
 Testing
+Devices 
+Android
+Apple
+Desktop/Laptops
+Browsers
+- Chrome
+- Edge
+- Firefox
+
 Validator Testing
 <!-- HTML
 No errors were returned when passing through the official W3C Validator. Link Report HEre -->
