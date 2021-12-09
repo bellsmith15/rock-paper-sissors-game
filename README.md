@@ -89,7 +89,7 @@ Acceptance Criteria:
 * It should be clear how to play the game.
 
 Implementation:
-* The layout of the foreground and background will make it clear for the userr to follow the game as it plays. There will be a button to the rules of the game on the page so the user can easily learn how to play and access information about the game.
+* The layout of the foreground and background will make it clear for the user to follow the game as it plays. There will be a button to the rules of the game on the page so the user can easily learn how to play and access information about the game.
 
 User Story:
 `As a user, I want to know what the score is.`

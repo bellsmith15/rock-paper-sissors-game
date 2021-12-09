@@ -65,7 +65,7 @@ function playGame(e) {
     generateComputerChoice();
     getResult();
     showWinner(winnerModal, modalAnswer, modalDisplay);
-    musicSound.play();
+    // musicSound.play();
 }
 
 function generateComputerChoice() {
