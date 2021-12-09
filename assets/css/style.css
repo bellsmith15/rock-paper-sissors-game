@@ -17,8 +17,6 @@
 }
 
 * body {
-    /* background-image: url(../images/vecteezy_christmas-trees-background_.jpg); */
-
     /* background-image: url(../images/vecteezy_mountain-winter-view-christmas-tree-background_.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -82,15 +80,6 @@ i {
     /* position: absolute; */
 }
 
-
-/* div#game-screen {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2,1fr);
-    justify-items: center;
-    align-items: center;
-} */
-
 .game-area {
     box-sizing: border-box;
     width: 85%;
@@ -143,11 +132,6 @@ i#computer-icon {
     color: rgb(179, 161, 0);
 }
 
-/* #rock,
-#far {
-    color: blueviolet;
-} */
-
 .round-results {
     padding-bottom: 32px;
     padding-top: 10px;
@@ -194,14 +178,8 @@ i#computer-icon {
 
 
 
-/* WORK this out */
-/* Inspiration from W3Schools modal layout. */
-
-
+/* Reference to W3Schools modal layout. */
 /* https://www.w3schools.com/howto/howto_css_modals.asp */
-
-
-/* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -228,9 +206,8 @@ i#computer-icon {
     width: 80%;
 }
 
-/* Inspiration from W3Schools modal layout. */
 .winner-modal {
-    display: none; /* Modal is hidden by default */
+    display: none;
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -255,9 +232,8 @@ i#computer-icon {
     width: 80%;
 }
 
-/* Inspiration from W3Schools modal layout. */
 .rules-modal {
-    display: none; /* Modal is hidden by default */
+    display: none;
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -299,18 +275,6 @@ i#computer-icon {
     text-decoration: none;
     cursor: pointer;
   }
-
-
-
-/* was this but above is W3 ref:
-.close {
-    color: black;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-} */
 
 h3 {
     display: block;
