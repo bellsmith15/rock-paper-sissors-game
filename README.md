@@ -80,7 +80,8 @@ Navigation elements should be contained within the game screen.
 Audio elements should be clearly visible to the user so that they can toggle audio on / off whilst playing the game.
 
 
-The Structure Plane
+# The Structure Plane
+
 User Story:
 `As a user, I want a fun and simple game to play.`
 
@@ -97,7 +98,7 @@ Acceptance Criteria:
 * It should be clear what both the user score and computer score is. This will let the user know if they are winning or not.
 
 Implementation:
-There will be a scoreboard that will display the scores for both the Player and Computer. 
+* There will be a scoreboard that will display the scores for both the Player and Computer. 
 
 User Story:
 `As a user, I want to know who won.`
