@@ -5,7 +5,7 @@ const closeBtn = document.getElementsByClassName('close')[0];
 // const openBtn = document.getElementsByClassName('open')[0];
 
 const winnerModal = document.getElementsByClassName('winner-modal')[0];
-const modalHeader = document.getElementsByClassName('modal-header')[0];
+const modalAnswer = document.getElementsByClassName('modal-answer')[0];
 const modalParagraph = document.getElementsByClassName('modal-result')[0];
 
 let playerChoice;
@@ -62,7 +62,7 @@ function playGame(e) {
     playerChoice = e.target.id;
     generateComputerChoice();
     getResult();
-    showWinner(winnerModal, modalHeader, modalParagraph);
+    showWinner(winnerModal, modalAnswer, modalParagraph);
     musicSound.play();
 }
 
@@ -128,14 +128,14 @@ function incrementComputerScore(score) {
 }
 
 
-function showWinner(winnerModal, modalHeader, modalParagraph) {
+function showWinner(winnerModal, modalAnswer, modalParagraph) {
     if (playerScore === 7) {
         winnerModal.style.display = 'block';
-        modalHeader.textContent = 'You Beat the Computer!';
+        modalAnswer.textContent = 'You Beat the Computer!';
         modalParagraph.textContent = `Player = ${playerScore} vs. Computer = ${computerScore}`;
     } else if (computerScore === 7) {
         winnerModal.style.display = 'block';
-        modalHeader.textContent = 'You just Lost The Game!';
+        modalAnswer.textContent = 'You just Lost The Game!';
         modalParagraph.textContent = `Computer = ${computerScore} vs. Player = ${playerScore}`;
     }
 }
