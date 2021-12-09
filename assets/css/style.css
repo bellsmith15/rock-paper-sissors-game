@@ -121,19 +121,24 @@ i {
 .choice:hover {
     transform: scale(1.3);
     /* color: rgb(179, 161, 0); */
-    color:#3D1201;
+    /* color:#3D1201; */
+    color:rgb(212, 89, 0)
+}
 }
 
 i#computer-icon {
     transform: scale(1.3);
-    color:rgbb(131, 118, 0);
+    /* color:rgbb(131, 118, 0); */
+    color:rgb(212, 89, 0)
+}
 }
 
 .round-results {
     padding-bottom: 32px;
     padding-top: 10px;
-    /* color:rgb(131, 118, 0); */
-    color:#3D1201;
+    /* color:rgb(131, 118, 0);
+    color:#3D1201; */
+    color:rgb(212, 89, 0)
 }
 
 .win {
