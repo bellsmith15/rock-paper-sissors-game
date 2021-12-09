@@ -317,14 +317,15 @@ h3 {
 }
 
 /* Large screens */
-@media only screen and (min-width: 1440px) {
+/* @media only screen and (min-width: 1440px) {
     #instructions {
         margin-bottom: 2.5rem;
     }
-}
+} */
 
 /* Laptop */
-@media only screen and (min-width: 1024px) {
+
+/* @media only screen and (min-width: 1024px) {
     .icons>i {
         font-size: 4rem;
     }
@@ -339,7 +340,8 @@ h3 {
 }
 
 /* Tablet styles */
-@media only screen and (min-width: 768px) {
+
+/* @media only screen and (min-width: 768px) {
    
     #home-screen h1 {
         font-size: 4rem;
@@ -390,4 +392,4 @@ h3 {
     .computer i {
         font-size: 3rem;
     }
-}
+} */
