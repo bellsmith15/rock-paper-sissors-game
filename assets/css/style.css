@@ -256,7 +256,7 @@ i#computer-icon {
     width: 80%;
 }
 
-/* Inspiration from W3Schools modal layout. */
+/* Researched reference modals from W3Schools */
 .rules-modal {
     display: none; /* Modal is hidden by default */
     position: fixed; 
@@ -301,18 +301,6 @@ i#computer-icon {
     cursor: pointer;
   }
 
-
-
-/* was this but above is W3 ref:
-.close {
-    color: black;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 2rem;
-    font-weight: bold;
-} */
-
 h3 {
     display: block;
     font-size: 1.17em;
@@ -323,14 +311,83 @@ h3 {
     font-weight: bold;
 }
 
-
-
-
-
-
-
-
 .how-to-play {
     width: 100%;
     text-align: center;
+}
+
+/* Large screens */
+@media only screen and (min-width: 1440px) {
+    #instructions {
+        margin-bottom: 2.5rem;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 1024px) {
+    .icons>i {
+        font-size: 4rem;
+    }
+
+    .modal-header {
+        font-size: 4rem;
+    }
+
+    .modal-result {
+        font-size: 2rem;
+    }
+}
+
+/* Tablet styles */
+@media only screen and (min-width: 768px) {
+   
+    #home-screen h1 {
+        font-size: 4rem;
+    }
+
+    .icons>i {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .how-to-play h2 {
+        font-size: 2.5rem;
+    }
+
+    .controls {
+        font-size: 2rem;
+    }
+
+    .game-area {
+        height: 90vh;
+        justify-content: center;
+    }
+
+    .round-result {
+        font-size: 3rem;
+    }
+
+    .players span {
+        font-size: 2.3rem;
+    }
+
+    .player, .computer {
+        padding: 2rem 0;
+    }
+
+    .player h2, .computer h2 {
+        font-size: 2.8rem;
+    }
+
+    .player, .computer p {
+        font-size: 2.3rem;
+    }
+
+    .choice {
+        font-size: 3rem;
+    }
+
+    .computer i {
+        font-size: 3rem;
+    }
 }
