@@ -221,16 +221,16 @@ Three errors were returned in the WAVE web accessibility report which are detail
 #
 # DEPLOYMENT
 
-* This Game was deployed using GitHub Pages with the following the steps:
+* The Game was deployed using GitHub Pages with the following the steps:
 
 1. Click on the `Settings` icon at the top of page in the navigation bar
 2. Scroll down until you see `Github Pages`
 3. There will be a message box saying "Check it out here" Click on the link to take you to the next page
-4. Here you will be greated with a form, Choose the repository `Javascript_PP2`
+4. Here you will be greated with a form, Choose the repository `rock-paper-sissors-game`
 5. Choose the branch in the drop down box, in this case `MAIN`
-6. Choose the directory in the next drop down box, in this case `Root`
+6. Choose the directory in the next drop down box, in this case `Root` select the master branch
 7. Then click `Save`
-8. It may take a few moments for the game to publish, but once live, the box at the top of the page with the site name will turn green and have a `Green` tick to the left of the link to the live page
+8. It may take a few moments for the game to publish, but once live, the box at the top of the page with the site name will turn green and have a `Green` tick to the left of the link to the live page. The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 9. Another way to find the live page is to navigate to settings, on the left menu click on `pages` and this will get you to the same point.
 
 * These commands were used for version control during project:
@@ -241,13 +241,7 @@ Three errors were returned in the WAVE web accessibility report which are detail
     * git branch - to see which branch currently working on
     * git pull - to pull all code into main branch once the feature branch had been merged and deleted
 
-Deployment
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-In the GitHub repository, navigate to the settings tab
-Select the pages link from the setting menu on the left hand side
-Under the GitHub Pages from the source section drop-down menu, select the master branch
-One the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-The live link can be found here -
+The live link can be found here - https://bellsmith15.github.io/rock-paper-sissors-game/
 
 #
 ## CREDITS AND REFERENCES
