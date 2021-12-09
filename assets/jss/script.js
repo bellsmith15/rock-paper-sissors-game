@@ -1,14 +1,14 @@
 // START
 
 const playerChoices = document.getElementsByClassName('choice');
-const roundAnswer = document.getElementById('round-answer'); /*resultDisplay*/
+const roundText = document.getElementById('round-text'); /*resultDisplay*/
 const closeBtn = document.getElementsByClassName('close')[0];
 
 const openBtn = document.getElementsByClassName('open')[0];
 
 const winnerModal = document.getElementsByClassName('winner-modal')[0];
-const modalAnswer = document.getElementsByClassName('modal-answer')[0];
-const modalDisplay = document.getElementsByClassName('modal-display')[0];
+const modalHeader = document.getElementsByClassName('modal-header')[0];
+const modalParagraph = document.getElementsByClassName('modal-result')[0];
 
 let playerChoice;
 let computerChoice;
@@ -64,8 +64,8 @@ function playGame(e) {
     playerChoice = e.target.id;
     generateComputerChoice();
     getResult();
-    showWinner(winnerModal, modalAnswer, modalDisplay);
-    // musicSound.play();
+    showWinner(winnerModal, modalHeader, modalParagraph);
+    musicSound.play();
 }
 
 function generateComputerChoice() {
@@ -95,7 +95,7 @@ function getResult() {
         case 'spockscissors':
         case 'spockrock':
             console.log('You win!');
-            roundAnswer.innerHTML = "You Win this Round!"; /*resultDisplay*/
+            roundText.innerHTML = "You Win this Round!"; /*resultDisplay*/
             incrementPlayerScore(scoreHTML);
             break;
         case 'scissorsrock':
@@ -108,7 +108,7 @@ function getResult() {
         case 'spocklizard':
         case 'scissorsspock':
         case 'rockspock':
-            roundAnswer.innerHTML = "You lose, the Computer Wins this Round!";
+            roundText.innerHTML = "You lose, the Computer Wins this Round!";
             incrementComputerScore(computerHTML);
             break;
         case 'rockrock':
@@ -116,7 +116,7 @@ function getResult() {
         case 'scissorsscissors':
         case 'lizardlizard':
         case 'spockspock':
-            roundAnswer.innerHTML = "Its a Draw!";
+            roundText.innerHTML = "Its a Draw!";
             break;
     }
 }
@@ -130,15 +130,15 @@ function incrementComputerScore(score) {
 }
 
 
-function showWinner(winnerModal, modalAnswer, modalDisplay) {
-    if (playerScore === 3) {
+function showWinner(winnerModal, modalHeader, modalParagraph) {
+    if (playerScore === 7) {
         winnerModal.style.display = 'block';
-        modalAnswer.textContent = 'You Beat the Computer!';
-        modalDisplay.textContent = `${playerScore} vs. ${computerScore}`;
-    } else if (computerScore === 3) {
+        modalHeader.textContent = 'You Beat the Computer!';
+        modalParagraph.textContent = `Player = ${playerScore} vs. Computer = ${computerScore}`;
+    } else if (computerScore === 7) {
         winnerModal.style.display = 'block';
-        modalAnswer.textContent = 'You just Lost The Game!';
-        modalDisplay.textContent = `${computerScore} vs. ${playerScore}`;
+        modalHeader.textContent = 'You just Lost The Game!';
+        modalParagraph.textContent = `Computer = ${computerScore} vs. Player = ${playerScore}`;
     }
 }
 
@@ -152,7 +152,7 @@ function resetGame(player, computer) {
     computerScore = 0;
     player.innerHTML = playerScore;
     computer.innerHTML = computerScore;
-    roundAnswer.innerHTML = '';
+    roundText.innerHTML = '';
     document.getElementById('computer-icon').className = '';
 }
 
@@ -160,13 +160,13 @@ function resetGame(player, computer) {
 // https://www.w3schools.com/howto/howto_css_modals.asp
 
 // Get the modal
-let modal = document.getElementById("myModal");
+var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-let btn = document.getElementById("myBtn");
+var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
