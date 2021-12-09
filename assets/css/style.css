@@ -83,14 +83,6 @@ i {
 }
 
 
-/* div#game-screen {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2,1fr);
-    justify-items: center;
-    align-items: center;
-} */
-
 .game-area {
     box-sizing: border-box;
     width: 85%;
@@ -193,12 +185,7 @@ i#computer-icon {
 }
 
 
-
-
-/* WORK this out */
-/* Inspiration from W3Schools modal layout. */
-
-
+/* Researched reference modals from W3Schools */
 /* https://www.w3schools.com/howto/howto_css_modals.asp */
 
 
@@ -228,7 +215,7 @@ i#computer-icon {
     width: 80%;
 }
 
-/* Inspiration from W3Schools modal layout. */
+
 .winner-modal {
     display: none; /* Modal is hidden by default */
     position: fixed; 
@@ -255,9 +242,9 @@ i#computer-icon {
     width: 80%;
 }
 
-/* Researched reference modals from W3Schools */
+
 .rules-modal {
-    display: none; /* Modal is hidden by default */
+    display: none;
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -315,16 +302,10 @@ h3 {
     text-align: center;
 }
 
-/* Large screens */
-/* @media only screen and (min-width: 1440px) {
-    #instructions {
-        margin-bottom: 2.5rem;
-    }
-} */
 
 /* Laptop */
 
-/* @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
     .icons>i {
         font-size: 4rem;
     }
@@ -340,12 +321,8 @@ h3 {
 
 /* Tablet styles */
 
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
    
-    #home-screen h1 {
-        font-size: 4rem;
-    }
-
     .icons>i {
         font-size: 3.5rem;
         margin-bottom: 2rem;
@@ -391,4 +368,4 @@ h3 {
     .computer i {
         font-size: 3rem;
     }
-} */
+}
