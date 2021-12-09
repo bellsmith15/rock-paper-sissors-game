@@ -82,40 +82,40 @@ Audio elements should be clearly visible to the user so that they can toggle aud
 
 The Structure Plane
 User Story:
-* `As a user, I want a fun and simple game to play.`
+`As a user, I want a fun and simple game to play.`
 
 Acceptance Criteria:
-It should be clear how to play the game.
+* It should be clear how to play the game.
 
 Implementation:
-The layout of the foreground and background will make it clear for the userr to follow the game as it plays. There will be a button to the rules of the game on the page so the user can easily learn how to play and access information about the game.
+* The layout of the foreground and background will make it clear for the userr to follow the game as it plays. There will be a button to the rules of the game on the page so the user can easily learn how to play and access information about the game.
 
 User Story:
-* `As a user, I want to know what the score is.`
+`As a user, I want to know what the score is.`
 
 Acceptance Criteria:
-It should be clear what both the user score and computer score is. This will let the user know if they are winning or not.
+* It should be clear what both the user score and computer score is. This will let the user know if they are winning or not.
 
 Implementation:
 There will be a scoreboard that will display the scores for both the Player and Computer. 
 
 User Story:
-* `As a user, I want to know who won.`
+`As a user, I want to know who won.`
 
 Acceptance Criteria:
-It should clear who has won the overall game after all rounds haev been played.
+* It should clear who has won the overall game after all rounds haev been played.
 
 Implementation:
-There will be a modal that will appear on the screen that will display who has won and what the finishing scores were.
+* There will be a modal that will appear on the screen that will display who has won and what the finishing scores were.
 
 User Story:
-* `As a user, I want to have some atmosphere included with some music.`
+`As a user, I want to have some atmosphere included with some music.`
 
 Acceptance Criteria:
-It should clear that a user can play audio music with a christmas theme whislt playing. https://pixabay.com/music/search/genre/christmas/
+* It should clear that a user can play audio music with a christmas theme whislt playing. https://pixabay.com/music/search/genre/christmas/
 
 Implementation:
-An icon will be on the page to allow the user to toggle the audio on the game either on or off.
+* An icon will be on the page to allow the user to toggle the audio on the game either on or off.
 
 ## WIREFRAMES
 The Skeleton Plane
