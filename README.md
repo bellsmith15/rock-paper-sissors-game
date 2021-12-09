@@ -1,108 +1,224 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# PORTFOLIO PROJECT - 2
 
-Welcome bellsmith15,
+# Rock Paper Scissors
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## PURPOSE
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Rock paper scissors is often used as a fair choosing method between two people, similar to coin flipping, drawing straws, or throwing dice in order to settle a dispute or make an unbiased group decision.
 
-## Gitpod Reminders
+* [Here is a link to the final project GITHUB POST](https://nikki.github.io/Javascript_PP2/)
+## FINAL DESIGN
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Final project image home page monitors](assets/testing/finaldesign.png)
 
-`python3 -m http.server`
+## INITIAL IDEA CONCEPT
 
-A blue button should appear to click: _Make Public_,
+My initial idea for the project was to create a game that is simple to use and competitive. The game is for people of all ages as a light bit of fun!. I have choosen to give the game a christmas feel as I am submitting this in December 
 
-Another blue button should appear to click: _Open Browser_.
+<!-- * The Features of the game:
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    * To have simple to read rules.
+    * Have a contrasting colour scheme (Light blue and Yellow with Dark-Grey text)
+    * Have a simple layout with 3 clear buttons with corresponding colours 
+    * Look fun with images, and be educational -->
+#  
+## CONTENTS
 
-A blue button should appear to click: _Make Public_,
+- [PORTFOLIO PROJECT - 2](#portfolio-project---2)
+- [ROCK PAPER SCISSORS](#rock-paper-scissors)
+  - [PURPOSE](#purpose)
+  - [FINAL DESIGN](#final-design)
+  - [INITIAL IDEA CONCEPT](#initial-idea-concept)
+- [](#)
+  - [CONTENTS](#contents)
+  - [UX/UI](#uxui)
+  - [USER STORIES](#user-stories)
+  - [WIREFRAMES](#wireframes)
+  - [FEATURES](#features)
+  - [DESIGN](#design)
+- [](#-1)
+- [TESTING](#testing)
+  - [DEVICES](#devices)
+  - [Validators](#validators)
+  - [Lighthouse](#lighthouse)
+  - [Game](#game)
+  - [Accessibility](#accessibility)
+  - [SOLVED BUGS AND ERRORS](#solved-bugs-and-errors)
+  - [UNSOLVED BUGS OR ERRORS](#unsolved-bugs-or-errors)
+  - [FUNCTIONALITY](#functionality)
+- [TECHNOLOGIES USED](#technologies-used)
+  - [PROGRAMS USED](#programs-used)
+- [DEPLOYMENT](#deployment)
+  - [REMOTE DEPLOYMENT:](#remote-deployment)
+  - [HOW TO FORK A REPOSITORY:](#how-to-fork-a-repository)
+  - [HOW TO CLONE A REPOSITORY:](#how-to-clone-a-repository)
+  - [HOW TO MAKE A LOCAL CLONE](#how-to-make-a-local-clone)
+  - [CREDITS AND REFERENCES](#credits-and-references)
+    - [IMAGES AND INFORMATION](#images-and-information)
+    - [CODE](#code)
+  - [ACKNOWLEDGEMENTS:](#acknowledgements)
+      - [RETURN TO THE TOP](#return-to-the-top)
 
-Another blue button should appear to click: _Open Browser_.
+- [CREDITS](#credits-and-references)
+  * [IMAGES AND INFORMATION](#images-and-information)
+  * [CODE](#code)
+- [ACKNOWLEDGEMENTS](#acknowledgements)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Introduction
+Xmas Rock-Paper-Scissors-Lizard-Spock Game is a web based game and was built using JavaScript, HTML and CSS. It is based on the modern Rock Paper Scissor Lizard Spock a variant of the classic Rock/Paper/Scissors. This game is targeted towards users who would like a short fun game to play against a the computer.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Table of Contents
 
-------
+UX
 
-## Release History
+The Strategy Plane
+Rock-Paper-Scissors-Lizard-Spock Game is intended to be a light hearted game for an individual to play for a short period of time. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Site Goals
+- To provide users with a fun and simple game to play.
+- To ensure that navigating the site is easy and intuitive for the user.
+- To provide users with rules on how to play the game.
+- To create a single page site that is easy to navigate through.
+- To create a site that is simple in appearance by adding basic colours and layouts.
+- To update the user wiith their progress throughout the game.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+User Stories
+- As a user I want a fun and simple game to play
+- As a user, I want a clear understanding of the game rules and how to win.
+- As a user, I want to see my score progress if I am the round winner.
+- As a user, I want my opponents score to progress if I am the loser of the round.
+- As a user, I want a message to appear, notifying me of the round winner.
+- As a user, I want to be notified if I have won or lost the game.
+- As a user, I want to be able to toggle the game audio on and off.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The Scope Plane
+Features planned:
+Responsive Design - The game/site should function correctly on screen sizes such as Mobile devices, Tablets, Laptops and Desktops for User to access. 
+Navigation elements should be contained within the game screen.
+Audio elements should be clearly visible to the user so that they can toggle audio on / off whilst playing the game.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+The Structure Plane
+User Story:
+As a user, I want a fun and simple game to play.
+Acceptance Criteria:
+It should be clear how to play the game.
+Implementation:
+The layout of the foreground and background will make it clear for the userr to follow the game as it plays. There will be a button to the rules of the game on the page so the user can easily learn how to play and access information about the game.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+User Story:
+As a user, I want to know what the score is.
+Acceptance Criteria:
+It should be clear what both the user score and computer score is. This will let the user know if they are winning or not.
+Implementation:
+There will be a scoreboard that will display the scores for both the Player and Computer. 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+User Story:
+As a user, I want to know who won.
+Acceptance Criteria:
+It should clear who has won the overall game after all rounds haev been played.
+Implementation:
+There will be a modal that will appear on the screen that will display who has won and what the finishing scores were.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+User Story:
+As a user, I want to have some atmosphere included with some music.
+Acceptance Criteria:
+It should clear that a user can play audio music with a christmas theme whislt playing.
+Implementation:
+An icon will be on the page to allow the user to toggle the audio on the game either on or off.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The Skeleton Plane
+Wireframe mockups;
+My initial designs for the game were created in Balsamiq, to show how the game would appear across differnt devices. MODALS examples
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The Surface Plane
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Design:
+I wanted to have some visuals for the user and decided to have a background for a christmas image and use the foreground to contain the game elements.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Background Image:
+I wanted to give my site a chrismas theme and sourced the background vector image from vecteezy.com website where it is free for download and use. (vecteezy_mountain-winter-view-christmas-tree-background_.jpg)
 
-------
+Color Schemes:
+To ensure that the colours used for different elements provided the required contrast ratio the colour codes were loaded into a contrast checker available at Contrast Grid.
 
-## FAQ about the uptime script
+<!-- PUT IN LINK TO CONTRAST GRID HERE
+PUT IN JPEG of GRID colours used HERE -->
 
-**Why have you added this script?**
+Typography:
+Google fonts was utilised to find a font that would be clean and clear for all users, whilst still conveying an element of fun. I eventually settled on a choice of Festive and Mountains of Christmas.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Icons:
+Font Awesome was used to create the hand icons for the game and audio buttons.
 
-**How will this affect me?**
+Features
+The User can click on the Rules button that will open the modal with the instructions of how to play
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The User having read the instructions can then play on the game screen and make their choice to play against the computer.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+A display shows the current score for both players until the total amount of rounds has been played.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+The end result is displayed showing whether the user or computer wins or loses the game. The display can be close then the game is ready for another play.
 
-**So….?**
+- Modals There are two modals available from the page, one for the rules of the game and one for the results.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
+Future Enhancements
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+Leaderboard - It would be nice for a player to enter their name and that their scores against the computer could be recorded onto a Leaderboard.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Snoweffect - I tried to have an animation of snow running 
 
-**Anything more?**
+Testing
+Validator Testing
+<!-- HTML
+No errors were returned when passing through the official W3C Validator. Link Report HEre -->
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<!-- CSS
+No errors were returned when passing through the official W3C CSS Validation Service - Jigsaw. VLink Report HEre -->
+https://jigsaw.w3.org/css-validator/validator
 
----
 
-Happy coding!
+<!-- JavaScript
+No errors were returned when passing through the validator service at JSHint.com. -->
+https://jshint.com/
+
+
+<!-- WAVE Web Accessibility
+Three errors were returned in the WAVE web accessibility report which are detailed in the TESTING.md file along with the resolution -->
+
+<!-- Lighthouse -->
+
+<!-- Notable Bugs -->
+
+
+Deployment
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the settings tab
+Select the pages link from the setting menu on the left hand side
+Under the GitHub Pages from the source section drop-down menu, select the master branch
+One the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here -
+
+Credits
+
+http://ami.responsivedesign.is/#  is used to display responsiveness on different devices.
+
+Media
+The background image of the trees was obtained from Vecteezy.com
+The favicon was created by using favicon-generator.org. The generator created both the image file and the link tag code for the head of the HTML file.
+
+Content
+CSS Styling
+How to create the custom toggle switches used in the settings modal were developed from a tutorial on w3schools.
+
+Reference Material
+W3 Schools was used as a reference point for HTML, CSS and JavaScript
+MDN Web Docs was also used as a reference point for HTML, CSS and JavaScript
+
+Acknowledgements
