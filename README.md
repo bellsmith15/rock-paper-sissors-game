@@ -1,6 +1,6 @@
 # PORTFOLIO PROJECT - 2
 
-# Rock Paper Scissors
+# ROCK PAPER SCOSSORS
 
 ## PURPOSE
 Introduction
@@ -29,8 +29,8 @@ My initial idea for the project was to create a game that is simple to use and c
   - [TABLE OF CONTENTS](#table-ofcontents)
   - [UX/UI](#uxui)
   - [USER STORIES](#user-stories)
-  - [WIREFRAMES](#wireframes)
   - [FEATURES](#features)
+  - [WIREFRAMES](#wireframes)
   - [DESIGN](#design)
 - [](#-1)
 - [TESTING](#testing)
@@ -50,7 +50,6 @@ My initial idea for the project was to create a game that is simple to use and c
 
 #
 # UX/UI
-* 
 The Strategy Plane
 Rock-Paper-Scissors-Lizard-Spock Game is intended to be a light hearted game for an individual to play for a short period of time. 
 
@@ -74,6 +73,7 @@ User Stories
 
 ## FEATURES
 The Scope Plane
+
 Features planned:
 Responsive Design - The game/site should function correctly on screen sizes such as Mobile devices, Tablets, Laptops and Desktops for User to access. 
 Navigation elements should be contained within the game screen.
@@ -134,7 +134,8 @@ Google fonts was utilised to find a font that would be clean and clear for all u
 * Icons:
 Font Awesome was used to create the hand icons for the game and audio buttons.
 
-Features
+
+* Features:
 The User can click on the Rules button that will open the modal with the instructions of how to play
 
 The User having read the instructions can then play on the game screen and make their choice to play against the computer.
@@ -266,4 +267,4 @@ Acknowledgements
 - My family for their support.
 - Everybody on Slack for tips, advice and quick fixes.
 
-#### RETURN TO THE [TOP](#one-stop-clock)
+#### RETURN TO THE [TOP](ROCK-PAPER-SCOSSORS)
