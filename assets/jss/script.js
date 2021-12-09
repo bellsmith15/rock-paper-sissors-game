@@ -1,7 +1,7 @@
 // START
 
 const playerChoices = document.getElementsByClassName('choice');
-const roundText = document.getElementById('round-text'); /*resultDisplay*/
+const roundAnswer = document.getElementById('round-answer'); /*resultDisplay*/
 const closeBtn = document.getElementsByClassName('close')[0];
 
 const openBtn = document.getElementsByClassName('open')[0];
@@ -95,7 +95,7 @@ function getResult() {
         case 'spockscissors':
         case 'spockrock':
             console.log('You win!');
-            roundText.innerHTML = "You Win this Round!"; /*resultDisplay*/
+            roundAnswer.innerHTML = "You Win this Round!"; /*resultDisplay*/
             incrementPlayerScore(scoreHTML);
             break;
         case 'scissorsrock':
@@ -108,7 +108,7 @@ function getResult() {
         case 'spocklizard':
         case 'scissorsspock':
         case 'rockspock':
-            roundText.innerHTML = "You lose, the Computer Wins this Round!";
+            roundAnswer.innerHTML = "You lose, the Computer Wins this Round!";
             incrementComputerScore(computerHTML);
             break;
         case 'rockrock':
@@ -116,7 +116,7 @@ function getResult() {
         case 'scissorsscissors':
         case 'lizardlizard':
         case 'spockspock':
-            roundText.innerHTML = "Its a Draw!";
+            roundAnswer.innerHTML = "Its a Draw!";
             break;
     }
 }
@@ -182,6 +182,7 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
+    musicSound.muted();
   }
 }
 
