@@ -42,16 +42,21 @@
         background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.4);
     }
+
+    h1.heading {
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }
 
 
 /* Tablet  */
-@media only screen and (min-width: 720px) {
+/* @media only screen and (min-width: 720px) {
     i {
         font-size: 0.7rem;
         transition: 100ms;
     }
-}
+} */
 
 
 /* Tablet  */
@@ -107,7 +112,6 @@
         /* font-size: 1.2rem; */
     }
 
-
     .win {
         border: 5px solid;
         border-radius: 15px;
@@ -130,6 +134,91 @@
 }
 
 
+/* MOBILES */
+@media only screen and (min-width: 320px) {
+    h1.heading {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        /* border: 5px solid; */
+        border-radius: 15px;
+        background-color: aliceblue;
+        /* padding-top: 10px; */
+        /* padding-bottom: 10px; */
+        padding-left: 10px;
+        padding-right: 10px;
+        left: auto;
+        /* position: absolute; */
+    }
+
+    .scoreboards {
+        display: flex;
+        height: 4.5rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .computer-scoreboard {
+        height: 100%;
+        width: 85%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1%;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .player-scoreboard {
+        height: 100%;
+        width: 85%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding: 1%;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        flex-direction: row;
+    }
+
+    .round-results {
+        /* padding-bottom: 32px; */
+        /* padding-top: 10px; */
+        color: rgb(179, 161, 0);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 80px;
+        /* left: 2rem; */
+        top: 20px;
+        width: 50%;
+        height: 100%;
+        /* overflow: auto; */
+        /* background-color: rgb(0, 0, 0); */
+        /* background-color: rgba(0, 0, 0, 0.4); */
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: aliceblue;
+        text-align: center;
+        left: 20px;
+        width: 94%;
+        color: black;
+        border: 3px solid black;
+    }
+
+}
 
 /* END MOBILES */
 
@@ -180,10 +269,7 @@
     text-align: center;
 }
 
-h1.heading {
-    text-align: center;
-    /* font-size: 1.2rem; */
-}
+
 
 p {
     font-size: 0.9rem;
@@ -427,12 +513,6 @@ h3 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-
-
-
-
-
-
 
 
 .how-to-play {
