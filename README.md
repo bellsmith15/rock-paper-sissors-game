@@ -1,5 +1,3 @@
-# PORTFOLIO PROJECT - 2
-
 # ROCK PAPER SCOSSORS
 
 ## PURPOSE
@@ -8,13 +6,12 @@ Rock paper scissors is often used as a fair choosing method between two people, 
 
 Rock paper scissors is often used as a fair choosing method between two people, similar to coin flipping, drawing straws, or throwing dice in order to settle a dispute or make an unbiased group decision.  
 
-* [Here is a link to the final project GITHUB POST](https://nikki.github.io/Javascript_PP2/)
+* [Here is a link to the final project GITHUB POST](https://bellsmith15.github.io/rock-paper-sissors-game/)
 ## FINAL DESIGN
 
-![Final project image home page monitors](assets/testing/finaldesign.png)
+![Final project image of home page monitors from Am I responsive](assets/images/am-i-responsive.png)
 
 ## INITIAL IDEA CONCEPT
-
 My initial idea for the project was to create a game that is simple to use and competitive. The game is for people of all ages as a light bit of fun!. I have choosen to give the game a christmas feel as I am submitting this in December 
 
 #  
@@ -68,15 +65,15 @@ User Stories
 - As a user, I want my opponents score to progress if I am the loser of the round.
 - As a user, I want a message to appear, notifying me of the round winner.
 - As a user, I want to be notified if I have won or lost the game.
-- As a user, I want to be able to toggle the game audio on and off.
+- As a user, I want to be able to pause or play the game audio.
 
 ## FEATURES
 The Scope Plane
 
 Features planned:
-Responsive Design - The game/site should function correctly on screen sizes such as Mobile devices, Tablets, Laptops and Desktops for User to access. 
-Navigation elements should be contained within the game screen.
-Audio elements should be clearly visible to the user so that they can toggle audio on / off whilst playing the game.
+* Responsive Design - The game / site should function correctly on screen sizes such as Mobile devices, Tablets, Laptops and Desktops for User to access. 
+* Navigation elements should be contained within the game screen.
+* Audio elements should be clearly visible to the user so that they can toggle audio on / off whilst playing the game.
 
 
 # The Structure Plane
@@ -93,7 +90,7 @@ Implementation:
 User Story:
 `As a user, I want to know what the score is.`
 
-Acceptance Criteria:
+Acceptance Criteria: 
 * It should be clear what both the user score and computer score is. This will let the user know if they are winning or not.
 
 Implementation:
@@ -117,11 +114,14 @@ Acceptance Criteria:
 Implementation:
 * An icon will be on the page to allow the user to toggle the audio on the game either on or off.
 
-The Skeleton Plane
+# The Skeleton Plane
+
 My initial thoughts for the design for the game was to have a central area in the middle of the page for the user to play the game. At the top woul dbe a heading with the game title, then a rules of play modal that popped out the instructions for the user.  Underneath this a section for the Players choices nad scores. The next section would be a results area then the last item would be an audio element to an some atmosphere to the Christmas theme.
 
 ## DESIGN
-The Surface Plane
+
+# The Surface Plane
+
 Design:
 I wanted to have some visuals for the user and decided to have a background for a christmas image and use the foreground to contain the game elements.
 
@@ -131,8 +131,7 @@ I wanted to give my site a chrismas theme and sourced the background vector imag
 * Color Schemes:
 To ensure that the colours used for different elements provided the required contrast ratio the colour codes were loaded into a contrast checker available at Contrast Grid.
 
-<!-- PUT IN LINK TO CONTRAST GRID HERE
-PUT IN JPEG of GRID colours used HERE -->
+![Contrast Grid](/assets/images/contrast-grid.png)
 
 * Typography:
 Google fonts was utilised to find a font that would be clean and clear for all users, whilst still conveying an element of fun. I eventually settled on a choice of Festive and Mountains of Christmas.
@@ -140,9 +139,8 @@ Google fonts was utilised to find a font that would be clean and clear for all u
 * Icons:
 Font Awesome was used to create the hand icons for the game and audio buttons.
 
-
 * Features:
-The User can click on the Rules button that will open the modal with the instructions of how to play
+The User can click on the Rules button that will open a modal with the instructions of how to play.  There are two modals available from the page, one for the rules of the game and one for the results.  I referenced these from W3.
 
 The User having read the instructions can then play on the game screen and make their choice to play against the computer.
 
@@ -150,71 +148,75 @@ A display shows the current score for both players until the total amount of rou
 
 The end result is displayed showing whether the user or computer wins or loses the game. The display can be close then the game is ready for another play.
 
-- Modals There are two modals available from the page, one for the rules of the game and one for the results.
-
 
 Future Enhancements
 
 * Leaderboard - It would be nice for a player to enter their name and that their scores against the computer could be recorded onto a Leaderboard.
 
-* Snoweffect - I tried to have an animation of snow running 
+* It would be nice to improve the audio button and make a button with pause and play on a smaller icon
 
-# TESTING
+* Snow effect - I tried to have an animation of snow running in the background in between the backgroud and foreground I would like to see if I can add this to the project at a later date.
 
-Testing
+## TESTING
 
-## DEVICES
-Devices 
-Android
-Apple
-Desktop/Laptops
+# DEVICES
+
+Desktop
+Laptops
+Tablet
+Mobile
+* Android
+* Apple
+
 Browsers
 - Chrome
 - Edge
 - Firefox
 
+
 ## Validators
+
 Validator Testing
-<!-- HTML
-No errors were returned when passing through the official W3C Validator. Link Report HEre -->
 
-<!-- CSS
-No errors were returned when passing through the official W3C CSS Validation Service - Jigsaw. VLink Report HEre -->
-https://jigsaw.w3.org/css-validator/validator
+HTML
+No errors were returned when passing through the official W3C HTML Validator Service. Link here: https://validator.w3.org/
+![HTML Validator testing](/assets/images/html-validator.png)
 
+CSS
+No errors were returned when passing through the official W3C CSS Validation Service. Link here: https://jigsaw.w3.org/
+![CSS Validator testing](/assets/images/css-validator.png)
 
-<!-- JavaScript
-No errors were returned when passing through the validator service at JSHint.com. -->
-https://jshint.com/
-JSHint JavaScript Validator
+JavaScript
+No errors were returned when passing through the validator service at JSHint.com. Link here: https://jshint.com/
+![CSS Validator testing](/assets/images/jshint-validator.png)
 
+Lighthouse
+The Lighthouse report returned a good report Performance, Best Practise and SEO returned 100% Accessibility returned 94% on contrast which I am happy to leave as this is a high score.
+![Lighthouse Validator testing](/assets/images/lighthouse-validation.png)
 
-<!-- WAVE Web Accessibility
-Three errors were returned in the WAVE web accessibility report which are detailed in the TESTING.md file along with the resolution -->
-
-<!-- Lighthouse -->
-
-<!-- Notable Bugs -->
+Notable Bugs
+In HTML I reviewed all the coding bugs and amended them to pass. Mainly working on the audio code that threw some bugs in.
+On CSS I amended some typos in the code and put best practices in to return a clear validation
 
 
 # TECHNOLOGIES USED
 
-* [HTML](https://en.wikipedia.org/wiki/HTML5)
-* [CSS](https://en.wikipedia.org/wiki/CSS#CSS_3)
-* [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript)
+* HTML
+* CSS
+* JAVASCRIPT
 
 ## PROGRAMS USED
 
 * GIT
-  * For version control, commiting and pushing to github
+`For version control, commiting and pushing to github`
 * GITPOD
-  * The IDE used to code the game
+`The IDE used to code the game`
 * GITHUB
-  * Used to store repositories, files and images pushed from gitpod
+`Used to store repositories, files and images pushed from gitpod`
 * Am I Responsive
-  * Used to test responsiveness of the game at different screen sizes
+`Used to test responsiveness of the game at different screen sizes`
 * CHROME Developer tools
-  * For checking compatibilty, troubleshooting and editing code
+`For checking compatibilty, troubleshooting and editing code`
 
 #
 # DEPLOYMENT
@@ -228,18 +230,14 @@ Three errors were returned in the WAVE web accessibility report which are detail
 5. Choose the branch in the drop down box, in this case `MAIN`
 6. Choose the directory in the next drop down box, in this case `Root` select the master branch
 7. Then click `Save`
-8. It may take a few moments for the game to publish, but once live, the box at the top of the page with the site name will turn green and have a `Green` tick to the left of the link to the live page. The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-9. Another way to find the live page is to navigate to settings, on the left menu click on `pages` and this will get you to the same point.
+8. It takes a few seconds for the game to publish, once live, the box at the top of the page with the site name will turn green and have a `Green` tick to the left of the link. The page is automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 * These commands were used for version control during project:
 
     * git add `example filename` - to add files before committing
     * git commit -m `"example message"` - to commit changes to the local repository
     * git push - to push all committed changes to the GitHub repository
-    * git branch - to see which branch currently working on
-    * git pull - to pull all code into main branch once the feature branch had been merged and deleted
 
-The live link can be found here - https://bellsmith15.github.io/rock-paper-sissors-game/
 
 #
 ## CREDITS AND REFERENCES
@@ -248,24 +246,23 @@ Credits
 http://ami.responsivedesign.is/#  is used to display responsiveness on different devices.
 
 ### IMAGE
-Media
-The background image of the trees was obtained from Vecteezy.com
-The favicon was created by using favicon-generator.org. The generator created both the image file and the link tag code for the head of the HTML file.
 
-Content
-CSS Styling
-How to create the custom toggle switches used in the settings modal were developed from a tutorial on w3schools.
+Media & Content
+The background image of the trees was obtained from Vecteezy.com
+The audio file was found from the pixabay site where the downloads are Royalty free and can be used for sites. https://pixabay.com/music/search/genre/christmas/
 
 ### CODE
 Reference Material
 W3 Schools was used as a reference point for HTML, CSS and JavaScript
+Ful
 MDN Web Docs was also used as a reference point for HTML, CSS and JavaScript
 
 #
 ## ACKNOWLEDGEMENTS:
 Acknowledgements
-- Code institute for the Tutors on the course.
+- My Mentor for encouraging me to research audio and animation references and the advice given for improving the site.
+- Code Institute for the Tutors on the course.
 - My family for their support.
-- Everybody on Slack for tips, advice and quick fixes.
+- Media support on W3 Schools, Stack Overflow, Blogs, Tutorialls online and MDN Weeb docs.
 
 #### RETURN TO THE [TOP](ROCK-PAPER-SCOSSORS)
