@@ -147,7 +147,7 @@ A display shows the current score for both players until the total amount of rou
 The end result is displayed showing whether the user or computer wins or loses the game. The display can be close then the game is ready for another play.
 
 
-Future Enhancements
+## Future Enhancements
 
 * Leaderboard - It would be nice for a player to enter their name and that their scores against the computer could be recorded onto a Leaderboard.
 
