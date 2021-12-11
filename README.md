@@ -1,9 +1,7 @@
-# ROCK PAPER SCOSSORS
+# ROCK PAPER SCISSORS
 
-## PURPOSE
-Introduction
-Rock paper scissors is often used as a fair choosing method between two people, similar to coin flipping, drawing straws, or throwing dice in order to settle a dispute or make an unbiased group decision.  
-
+# PURPOSE
+## Introduction:
 Rock paper scissors is often used as a fair choosing method between two people, similar to coin flipping, drawing straws, or throwing dice in order to settle a dispute or make an unbiased group decision.  
 
 * [Here is a link to the final project GITHUB POST](https://bellsmith15.github.io/rock-paper-sissors-game/)
@@ -17,7 +15,6 @@ My initial idea for the project was to create a game that is simple to use and c
 #  
 ## Table of Contents
 
-- [PORTFOLIO PROJECT - 2](#portfolio-project---2)
 - [ROCK PAPER SCISSORS](#rock-paper-scissors)
   - [PURPOSE](#purpose)
   - [FINAL DESIGN](#final-design)
