@@ -25,12 +25,12 @@ My initial idea for the project was to create a game that is simple to use and c
   - [USER STORIES](#user-stories)
   - [FEATURES](#features)
   - [DESIGN](#design)
-- [](#-1)
 - [TESTING](#testing)
-  - [DEVICES](#devices)
 - [TECHNOLOGIES USED](#technologies-used)
   - [PROGRAMS USED](#programs-used)
 - [DEPLOYMENT](#deployment)
+
+
 - [CREDITS AND REFERENCES](#credits-and-references)
     - [IMAGES AND INFORMATION](#images-and-information)
     - [CODE](#code)
@@ -207,7 +207,7 @@ On CSS I amended some typos in the code and put best practices in to return a cl
 * CSS
 * JAVASCRIPT
 
-## PROGRAMS USED
+# PROGRAMS USED
 
 * GIT
 `For version control, commiting and pushing to github`
