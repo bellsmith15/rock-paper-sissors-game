@@ -175,21 +175,25 @@ Browsers
 
 # Validator Testing
 
-## Validators
+## Validators:
 
 * HTML
+
 No errors were returned when passing through the official W3C HTML Validator Service. Link here: https://validator.w3.org/
 ![HTML Validator testing](/assets/images/html-validator.png)
 
 * CSS
+
 No errors were returned when passing through the official W3C CSS Validation Service. Link here: https://jigsaw.w3.org/
 ![CSS Validator testing](/assets/images/css-validator.png)
 
 * JavaScript
+
 No errors were returned when passing through the validator service at JSHint.com. Link here: https://jshint.com/
 ![CSS Validator testing](/assets/images/jshint-validator.png)
 
-* Lighthouse report returned a good report Performance, Best Practise and SEO returned 100% Accessibility returned 94% on contrast which I am happy to leave as this is a high score.
+* Lighthouse
+The report returned a good report Performance, Best Practise and SEO returned 100% Accessibility returned 94% on contrast which I am happy to leave as this is a high score.
 ![Lighthouse Validator testing](/assets/images/lighthouse-validation.png)
 
 * Notable Bugs
@@ -216,7 +220,6 @@ On CSS I amended some typos in the code and put best practices in to return a cl
 * CHROME Developer tools
 `For checking compatibilty, troubleshooting and editing code`
 
-#
 ## DEPLOYMENT
 
 The Game was deployed using GitHub Pages with the following the steps:
