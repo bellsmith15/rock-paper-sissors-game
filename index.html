@@ -54,179 +54,181 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Play a fun game of Rock Paper Scissors Lizard Spock. Win against the computer by being the first to reach 7 points.">
-    <meta name="keywords" content="Rock, Paper, Scissors, Lizard, Spock, Game, JavaScript ">
-    <meta name="author" content="Bell">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Play a fun game of Rock Paper Scissors Lizard Spock. Win against the computer by being the first to reach 7 points.">
+  <meta name="keywords" content="Rock, Paper, Scissors, Lizard, Spock, Game, JavaScript ">
+  <meta name="author" content="Bell">
 
-    <!-- Font Awesome and Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Festive&family=Mountains+of+Christmas:wght@700&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Rock, Paper, Scissors, Lizard, Spock, Game</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Rock, Paper, Scissors, Lizard, Spock, Game</title>
 </head>
 
 <body>
 
-    <div class="background">
-        <div id="background"></div>
+
+
+  <div class="background">
+    <div id="background"></div>
+  </div>
+
+  <div class="foreground">
+
+    <header>
+
+    <h1 class="heading">
+      Xmas Rock-Paper-Scissors-Lizard-Spock Game
+    </h1></header>
+
+    <div class="rules-btn">
+      <button class="btn" id="myBtn">Rules of Play</button>
     </div>
 
-    <div class="foreground">
 
-        <h1 class="heading">
-            Xmas Rock-Paper-Scissors-Lizard-Spock Game
-        </h1>
-
-        <div class="rules-btn">
-            <button class="btn" id="myBtn">Rules of Play</button>
-        </div>
+    <div id="game-screen" style="display: block;">
+      <div class="game-area">
 
 
-        <div id="game-screen" style="display: block;">
-            <div class="game-area">
+        <div class="scoreboards">
 
-
-                <div class="scoreboards">
-
-                    <div class="player-scoreboard">
-                        <h1>Player's Score is:</h1>
-                        <p class="score"><span class="score"> 0 </span></p>
-                        <p>Make your choice?</p>
-                        <div class="choices">
-                            <i id="rock" class="far fa-hand-rock choice"></i>
-                            <i id="paper" class="far fa-hand-paper choice"></i>
-                            <i id="scissors" class="far fa-hand-scissors choice"></i>
-                            <i id="lizard" class="far fa-hand-lizard choice"></i>
-                            <i id="spock" class="far fa-hand-spock choice"></i>
-                        </div>
-                    </div>
-
-                    <div class="computer-scoreboard">
-                        <h1>Computer's Score is:</h1>
-                        <p class="score"><span class="comp-score"> 0 </span></p>
-                        <p>Computer chooses ...</p>
-                        <i id="computer-icon" class="far fa-hand-spock"></i>
-                    </div>
-
-                </div>
-
-
-                <!--track -->
-
-                <div class="winner-modal" style="">
-                    <div class="modal-content">
-                        <span class="close"><i class="fas fa-times-circle"></i></span>
-                        <h3 class="modal-answer"></h3>
-                        <p class="modal-result"></p>
-                    </div>
-                </div>
-
-
-
+          <div class="player-scoreboard">
+            <h1>Player's Score is:</h1>
+            <p class="score"><span class="score"> 0 </span></p>
+            <p>Make your choice?</p>
+            <div class="choices">
+              <i id="rock" class="far fa-hand-rock choice"></i>
+              <i id="paper" class="far fa-hand-paper choice"></i>
+              <i id="scissors" class="far fa-hand-scissors choice"></i>
+              <i id="lizard" class="far fa-hand-lizard choice"></i>
+              <i id="spock" class="far fa-hand-spock choice"></i>
             </div>
+          </div>
+
+          <div class="computer-scoreboard">
+            <h1>Computer's Score is:</h1>
+            <p class="score"><span class="comp-score"> 0 </span></p>
+            <p>Computer chooses ...</p>
+            <i id="computer-icon" class="far fa-hand-spock"></i>
+          </div>
+
         </div>
 
 
-        <div class="win" style="">
-            <div class="round-results">
-                <span id="round-text">Computer Wins the Round!</span>
-            </div>
-            <p>Winning Combinations are;
-                <br>
-                <i class="far fa-hand-rock"> Crushes </i> <i class="far fa-hand-scissors"></i> &
-                <i class="far fa-hand-lizard"></i>
-                <br>
-                <i class="far fa-hand-paper"></i> Covers <i class="far fa-hand-rock"></i>
-                & Disproves <i class="far fa-hand-spock"></i>
-                <br>
-                <i class="far fa-hand-scissors"></i> Cuts <i class="far fa-hand-paper"></i>
-                &
-                Decapitates a <i class="far fa-hand-lizard"></i>
-                <br>
-                <i class="far fa-hand-lizard"></i> Poisons <i class="far fa-hand-spock"></i>
-                &
-                Eats <i class="far fa-hand-paper"></i>
-                <br>
-                <i class="far fa-hand-spock"></i> Smashes <i class="far fa-hand-scissors"></i>
-                & Vapourises <i class="far fa-hand-rock"></i>
-                <br>
-            </p>
-        </div>
-        
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close"></span>
-                <h1>How to Play the Game</h1>
-                <p>Choose the shape of hand that you want to play against the Computer. Click on the image you want
-                    to to start the game.
-                    Remember choose wisely it is best of '7' go's for you to beat the Computer.</p>
-            </div>
+        <!--track -->
+
+        <div class="winner-modal" style="">
+          <div class="modal-content">
+            <span class="close"><i class="fas fa-times-circle"></i></span>
+            <h3 class="modal-answer"></h3>
+            <p class="modal-result"></p>
+          </div>
         </div>
 
-        <!-- FontAwesome -->
-            <script src="https://kit.fontawesome.com/6f8f3d395c.js" crossorigin="anonymous"></script>
 
 
-            <script src="assets/jss/script.js"></script>
-
+      </div>
     </div>
-    
+
+
+    <div class="win" style="">
+      <div class="round-results">
+        <span id="round-text">Computer Wins the Round!</span>
+      </div>
+      <p>Winning Combinations are;
+        <br>
+        <i class="far fa-hand-rock"> Crushes </i> <i class="far fa-hand-scissors"></i> &
+        <i class="far fa-hand-lizard"></i>
+        <br>
+        <i class="far fa-hand-paper"></i> Covers <i class="far fa-hand-rock"></i>
+        & Disproves <i class="far fa-hand-spock"></i>
+        <br>
+        <i class="far fa-hand-scissors"></i> Cuts <i class="far fa-hand-paper"></i>
+        &
+        Decapitates a <i class="far fa-hand-lizard"></i>
+        <br>
+        <i class="far fa-hand-lizard"></i> Poisons <i class="far fa-hand-spock"></i>
+        &
+        Eats <i class="far fa-hand-paper"></i>
+        <br>
+        <i class="far fa-hand-spock"></i> Smashes <i class="far fa-hand-scissors"></i>
+        & Vapourises <i class="far fa-hand-rock"></i>
+        <br>
+      </p>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close"></span>
+        <h1>How to Play the Game</h1>
+        <p>Choose the shape of hand that you want to play against the Computer. Click on the image you want
+          to to start the game.
+          Remember choose wisely it is best of '7' go's for you to beat the Computer.</p>
+      </div>
+    </div>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/6f8f3d395c.js" crossorigin="anonymous"></script>
+
+
+    <script src="assets/jss/script.js"></script>
+
+  </div>
+
+  <footer></footer>
+
 </body>
 
 </html>
 
- <!-- https://pixabay.com/music/search/genre/christmas/ -->
+<!-- https://pixabay.com/music/search/genre/christmas/ -->
 
 
 
-    <!-- <div class="music-btn">
+<!-- <div class="music-btn">
         <button class="btn" id="audio">Play Music</button>
         <i class="fas fa-holly-berry" id="audio" >Play Music</i>
     </div> -->
-    <!-- <button id="start" class="btn">Make this reset button work</button> -->
+<!-- <button id="start" class="btn">Make this reset button work</button> -->
 
-    <!-- <i id="audio" class="fas fa-holly-berry" style="color:darkgreen;">
+<!-- <i id="audio" class="fas fa-holly-berry" style="color:darkgreen;">
         <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg"></i> -->
 
 
-        <audio controls="loop">
-            <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg">
-        </audio>
-    
-        <i id="audio" class="fas fa-holly-berry" style="color:darkgreen;">
-            <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg"></i>
-    
-    
-        <audio id="myAudio">
-            <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg">Your browser does not support the audio element.
-        </audio>
-    
-        <button onclick="playAudio" type="button">Play</button>
-        <button onclick="pauseAudio" type="button">Pause</button>
-    
-        <script>
-            let music = document.getElementById("myAudio"); 
-            
-            function playAudio() { 
-              music.play(); 
-            } 
-            
-            function pauseAudio() { 
-              music.pause(); 
-            } 
-        </script>
-    
-    
-        <!-- <button onclick='play'>Play Xmas</button> -->
+<!-- <audio controls="loop">
+  <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg">
+</audio>
+
+<i id="audio" class="fas fa-holly-berry" style="color:darkgreen;">
+  <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg"></i>
 
 
-        
-    
-    
-    
+<audio id="myAudio">
+  <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg">Your browser does not support the audio
+  element.
+</audio>
+
+<button onclick="playAudio" type="button">Play</button>
+<button onclick="pauseAudio" type="button">Pause</button>
+
+<script>
+  let music = document.getElementById("myAudio");
+
+  function playAudio() {
+    music.play();
+  }
+
+  function pauseAudio() {
+    music.pause();
+  }
+</script> -->
+
+
+<!-- <button onclick='play'>Play Xmas</button> -->

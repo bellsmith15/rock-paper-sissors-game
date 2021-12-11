@@ -9,222 +9,6 @@
     /* font-size: 40px; */
 }
 
-
-
-/* Laptop styles */
-@media only screen and (min-width: 1024px) {
-    .icons>i {
-        font-size: 4rem;
-    }
-
-    * {
-        font-size: 40px;
-    }
-
-    .modal-header {
-        font-size: 4rem;
-    }
-
-    .modal-result {
-        font-size: 2rem;
-    }
-
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        /* left: 3rem; */
-        top: 0;
-        /* width: 80%; */
-        height: 100%;
-        overflow: auto;
-        background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    h1.heading {
-        text-align: center;
-        font-size: 1.2rem;
-    }
-}
-
-
-/* Tablet  */
-/* @media only screen and (min-width: 720px) {
-    i {
-        font-size: 0.7rem;
-        transition: 100ms;
-    }
-} */
-
-
-/* Tablet  */
-@media only screen and (min-width: 760px) {
-    h1.heading {
-        font-size: 3rem;
-    }
-
-    .scoreboards {
-        transform: scale(1.5);
-    }
-
-    p.score {
-        font-size: 3rem;
-    }
-
-    p {
-        font-size: 2rem;
-    }
-
-    i {
-        font-size: 2rem;
-    }
-
-
-    .win {
-        border: 5px solid;
-        border-radius: 15px;
-        background-color: aliceblue;
-        box-sizing: border-box;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1%;
-        font-size: 2rem;
-        margin-bottom: 20PX;
-    }
-}
-
-
-/* MOBILES */
-@media only screen and (min-width: 520px) {
-    .game-area {
-        box-sizing: border-box;
-        width: 70%;
-        max-height: 450px;
-        max-width: 830px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    h1.heading {
-        /* font-size: 1.2rem; */
-    }
-
-    .win {
-        border: 5px solid;
-        border-radius: 15px;
-        background-color: aliceblue;
-        box-sizing: border-box;
-        padding: 1%;
-        margin-top: 100px;
-    }
-
-    .modal-content {
-        position: relative;
-        background-color: aliceblue;
-        text-align: center;
-        color: black;
-        margin: 15% auto;
-        border: 3px solid black;
-        width: 80%;
-    }
-
-}
-
-
-/* MOBILES */
-@media only screen and (min-width: 320px) {
-    h1.heading {
-        font-size: 1.2rem;
-    }
-
-    .btn {
-        /* border: 5px solid; */
-        border-radius: 15px;
-        background-color: aliceblue;
-        /* padding-top: 10px; */
-        /* padding-bottom: 10px; */
-        padding-left: 10px;
-        padding-right: 10px;
-        left: auto;
-        /* position: absolute; */
-    }
-
-    .scoreboards {
-        display: flex;
-        height: 4.5rem;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-content: stretch;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .computer-scoreboard {
-        height: 100%;
-        width: 85%;
-        justify-content: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 1%;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-    }
-
-    .player-scoreboard {
-        height: 100%;
-        width: 85%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        padding: 1%;
-        justify-content: space-evenly;
-        flex-wrap: nowrap;
-        align-content: stretch;
-        flex-direction: row;
-    }
-
-    .round-results {
-        /* padding-bottom: 32px; */
-        /* padding-top: 10px; */
-        color: rgb(179, 161, 0);
-    }
-
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        left: 80px;
-        /* left: 2rem; */
-        top: 20px;
-        width: 50%;
-        height: 100%;
-        /* overflow: auto; */
-        /* background-color: rgb(0, 0, 0); */
-        /* background-color: rgba(0, 0, 0, 0.4); */
-    }
-
-    .modal-content {
-        position: relative;
-        background-color: aliceblue;
-        text-align: center;
-        left: 20px;
-        width: 94%;
-        color: black;
-        border: 3px solid black;
-    }
-
-}
-
-/* END MOBILES */
-
-
-
-
 :root {
     /* --text: #F7F7F7; */
     /* --text: #171515; */
@@ -243,6 +27,21 @@
     /* 
     position:relative; */
     color: var(--text);
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    width:100%;
+    left:0;
+    bottom:0;
+    box-sizing: border-box;
+    min-height: 60px;
+    padding-top: 5px;
+    text-align: center;
 }
 
 /* https://www.w3schools.com/howto/howto_css_blurred_background.asp */
@@ -390,8 +189,6 @@ i#computer-icon {
 }
 
 
-
-
 /* Reference to W3Schools modal layout. */
 /* https://www.w3schools.com/howto/howto_css_modals.asp */
 /* .modal {
@@ -518,4 +315,113 @@ h3 {
 .how-to-play {
     width: 100%;
     text-align: center;
+}
+
+/* MOBILES */
+@media only screen and (min-width: 320px) {
+    h1.heading {
+        font-size: 1.2rem;
+        padding: 10px
+    }
+
+    .btn {
+        border-radius: 15px;
+        background-color: aliceblue;
+        left: auto;
+    }
+
+    .scoreboards {
+        display: flex;
+        height: 4.5rem;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-content: stretch;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .computer-scoreboard {
+        height: 100%;
+        width: 85%;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1%;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+
+    .player-scoreboard {
+        height: 100%;
+        width: 85%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        padding: 1%;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        flex-direction: row;
+    }
+
+    .score {
+        font-size: 20px;
+    }
+
+    .choices {
+        transform: scale(1.3);
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .round-results {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: rgb(179, 161, 0);
+    }
+
+    /* .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 80px;
+        /* left: 2rem; */
+        /* top: 20px;
+        width: 50%;
+        height: 100%; */
+        /* overflow: auto; */
+        /* background-color: rgb(0, 0, 0); */
+        /* background-color: rgba(0, 0, 0, 0.4); */
+    
+
+    .modal {
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 80px;
+        width: 50%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+        position: relative;
+        background-color: aliceblue;
+        text-align: center;
+        right: 50px;
+        width: 94%;
+        color: black;
+        border: 3px solid black;
+    }
+
+    .win {
+        width: 90%;
+     }
+
+
 }
