@@ -16,7 +16,6 @@ let computerHTML = document.getElementsByClassName('comp-score')[0];
 let playerScore = 0;
 let computerScore = 0;
 
-
 const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
 
 // function playMusic() {
@@ -64,6 +63,11 @@ closeBtn.addEventListener('click', () => {
 });
 
 
+/**
+ * The main game function that identifies both players choices (randomly for the computer), 
+ * then the results for each of the seven rounds of play with a final winning scoreboard
+ */
+
 function playGame(e) {
     playerChoice = e.target.id;
     generateComputerChoice();
@@ -85,7 +89,7 @@ function displayComputerChoice() {
 }
 
 /*https://www.w3schools.com/js/js_switch.asp*/
-/*youtube tutorials*/
+/*video tutorials*/
 function getResult() {
     switch (playerChoice + computerChoice) {
         case 'rockscissors':
@@ -137,12 +141,12 @@ function incrementComputerScore(score) {
 function showWinner(winnerModal, modalAnswer, modalParagraph) {
     if (playerScore === 7) {
         winnerModal.style.display = 'block';
-        modalAnswer.textContent = 'You Beat the Computer!';
-        modalParagraph.textContent = `Player = ${playerScore} vs. Computer = ${computerScore}`;
+        modalAnswer.textContent = 'Winner! You Beat the Computer!';
+        modalParagraph.textContent = `${playerScore} to ${computerScore}`;
     } else if (computerScore === 7) {
         winnerModal.style.display = 'block';
-        modalAnswer.textContent = 'You just Lost The Game!';
-        modalParagraph.textContent = `Computer = ${computerScore} vs. Player = ${playerScore}`;
+        modalAnswer.textContent = 'Sorry you Lost this Game!';
+        modalParagraph.textContent = `${computerScore} to ${playerScore}`;
     }
 }
 

@@ -189,6 +189,7 @@ https://jigsaw.w3.org/css-validator/validator
 <!-- JavaScript
 No errors were returned when passing through the validator service at JSHint.com. -->
 https://jshint.com/
+JSHint JavaScript Validator
 
 
 <!-- WAVE Web Accessibility
