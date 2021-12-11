@@ -172,9 +172,9 @@ Browsers
 - Firefox
 
 
-## Validators
-
 # Validator Testing
+
+## Validators
 
 * HTML
 No errors were returned when passing through the official W3C HTML Validator Service. Link here: https://validator.w3.org/
