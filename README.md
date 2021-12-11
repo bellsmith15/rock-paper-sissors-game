@@ -115,7 +115,7 @@ Implementation:
 
 ## The Skeleton Plane
 
-My initial thoughts for the design for the game was to have a central area in the middle of the page for the user to play the game. At the top woul dbe a heading with the game title, then a rules of play modal that popped out the instructions for the user.  Underneath this a section for the Players choices nad scores. The next section would be a results area then the last item would be an audio element to an some atmosphere to the Christmas theme.
+My initial thoughts for the design for the game was to have a central area in the middle of the page for the user to play the game. At the top woul dbe a heading with the game title, then a rules of play modal that popped out the instructions for the user.  Underneath this a section for the Players choices and scores. The next section would be a results area then the last item would be an audio element to an some atmosphere to the Christmas theme.
 
 # DESIGN
 
