@@ -32,7 +32,7 @@ My initial idea for the project was to create a game that is simple to use and c
 - [CREDITS AND REFERENCES](#credits-and-references)
   - [REFERENCE MATERIAL](#reference-material)
 - [ACKNOWLEDGEMENTS:](#acknowledgements)
-- [RETURN TO THE TOP](#return-to-the-top)
+
 
 #
 # UX/UI
@@ -252,5 +252,3 @@ MDN Web Docs was also used as a reference point for HTML, CSS and JavaScript
 - Code Institute for the Tutors on the course.
 - My family for their support.
 - Media support on W3 Schools, Stack Overflow, Blogs, Tutorialls online and MDN Weeb docs.
-
-#### RETURN TO THE [TOP] (ROCK-PAPER-SCISSORS)
