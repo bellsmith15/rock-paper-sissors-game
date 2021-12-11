@@ -1,9 +1,10 @@
+/**
+ * Declare constants for DOM elements
+ * and possible choices
+ */
 const playerChoices = document.getElementsByClassName('choice');
 const roundText = document.getElementById('round-text'); /*resultDisplay*/
 const closeBtn = document.getElementsByClassName('close')[0];
-
-// const openBtn = document.getElementsByClassName('open')[0];
-
 const winnerModal = document.getElementsByClassName('winner-modal')[0];
 const modalAnswer = document.getElementsByClassName('modal-answer')[0];
 const modalParagraph = document.getElementsByClassName('modal-result')[0];
@@ -48,6 +49,11 @@ const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
 //   xmas.pause(); 
 // } 
 
+
+
+/**
+ * Add event listener
+ */
 
 for (let choice of playerChoices) {
     choice.addEventListener('click', playGame);
