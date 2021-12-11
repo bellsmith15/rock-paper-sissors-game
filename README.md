@@ -186,6 +186,7 @@ No errors were returned when passing through the validator service at JSHint.com
 ![CSS Validator testing](/assets/images/jshint-validator.png)
 
 * Lighthouse
+
 The report returned a good report Performance, Best Practise and SEO returned 100% Accessibility returned 94% on contrast which I am happy to leave as this is a high score.
 ![Lighthouse Validator testing](/assets/images/lighthouse-validation.png)
 
