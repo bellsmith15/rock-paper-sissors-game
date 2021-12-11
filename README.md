@@ -188,8 +188,7 @@ No errors were returned when passing through the official W3C CSS Validation Ser
 No errors were returned when passing through the validator service at JSHint.com. Link here: https://jshint.com/
 ![CSS Validator testing](/assets/images/jshint-validator.png)
 
-* Lighthouse
-The Lighthouse report returned a good report Performance, Best Practise and SEO returned 100% Accessibility returned 94% on contrast which I am happy to leave as this is a high score.
+* Lighthouse report returned a good report Performance, Best Practise and SEO returned 100% Accessibility returned 94% on contrast which I am happy to leave as this is a high score.
 ![Lighthouse Validator testing](/assets/images/lighthouse-validation.png)
 
 * Notable Bugs
@@ -219,7 +218,7 @@ On CSS I amended some typos in the code and put best practices in to return a cl
 #
 ## DEPLOYMENT
 
-* The Game was deployed using GitHub Pages with the following the steps:
+The Game was deployed using GitHub Pages with the following the steps:
 
 1. Click on the `Settings` icon at the top of page in the navigation bar
 2. Scroll down until you see `Github Pages`
@@ -232,8 +231,8 @@ On CSS I amended some typos in the code and put best practices in to return a cl
 
 * These commands were used for version control during project:
 
-    * git add `example filename` - to add files before committing
-    * git commit -m `"example message"` - to commit changes to the local repository
+    * git add . `example filename` - to add files before committing
+    * git commit -m `example message` - to commit changes to the local repository
     * git push - to push all committed changes to the GitHub repository
 
 
