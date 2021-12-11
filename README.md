@@ -207,7 +207,7 @@ On CSS I amended some typos in the code and put best practices in to return a cl
 * CSS
 * JAVASCRIPT
 
-# PROGRAMS USED
+### PROGRAMS USED
 
 * GIT
 `For version control, commiting and pushing to github`
