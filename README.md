@@ -10,7 +10,7 @@ Rock paper scissors is often used as a fair choosing method between two people, 
 ![Final project image of home page monitors from Am I responsive](assets/images/am-i-responsive.png)
 
 ## INITIAL IDEA CONCEPT
-My initial idea for the project was to create a game that is simple to use and competitive. The game is for people of all ages as a light bit of fun!. I have choosen to give the game a christmas feel as I am submitting this in December 
+My initial idea for the project was to create a game that is simple to use and competitive. The game is for people of all ages as a light bit of fun! I have choosen to give the game a christmas feel as I am submitting this in December 
 
 #  
 ## Table of Contents
@@ -65,7 +65,8 @@ User Stories
 - As a user, I want to be able to pause or play the game audio.
 
 ## FEATURES
-The Scope Plane
+
+## The Scope Plane
 
 Features planned:
 * Responsive Design - The game / site should function correctly on screen sizes such as Mobile devices, Tablets, Laptops and Desktops for User to access. 
@@ -73,7 +74,7 @@ Features planned:
 * Audio elements should be clearly visible to the user so that they can toggle audio on / off whilst playing the game.
 
 
-# The Structure Plane
+## The Structure Plane
 
 User Story:
 `As a user, I want a fun and simple game to play.`
@@ -111,13 +112,13 @@ Acceptance Criteria:
 Implementation:
 * An icon will be on the page to allow the user to toggle the audio on the game either on or off.
 
-# The Skeleton Plane
+## The Skeleton Plane
 
 My initial thoughts for the design for the game was to have a central area in the middle of the page for the user to play the game. At the top woul dbe a heading with the game title, then a rules of play modal that popped out the instructions for the user.  Underneath this a section for the Players choices nad scores. The next section would be a results area then the last item would be an audio element to an some atmosphere to the Christmas theme.
 
-## DESIGN
+# DESIGN
 
-# The Surface Plane
+## The Surface Plane
 
 Design:
 I wanted to have some visuals for the user and decided to have a background for a christmas image and use the foreground to contain the game elements.
@@ -154,9 +155,9 @@ Future Enhancements
 
 * Snow effect - I tried to have an animation of snow running in the background in between the backgroud and foreground I would like to see if I can add this to the project at a later date.
 
-## TESTING
+# TESTING
 
-# DEVICES
+## DEVICES
 
 Desktop
 Laptops
@@ -173,30 +174,30 @@ Browsers
 
 ## Validators
 
-Validator Testing
+# Validator Testing
 
-HTML
+* HTML
 No errors were returned when passing through the official W3C HTML Validator Service. Link here: https://validator.w3.org/
 ![HTML Validator testing](/assets/images/html-validator.png)
 
-CSS
+* CSS
 No errors were returned when passing through the official W3C CSS Validation Service. Link here: https://jigsaw.w3.org/
 ![CSS Validator testing](/assets/images/css-validator.png)
 
-JavaScript
+* JavaScript
 No errors were returned when passing through the validator service at JSHint.com. Link here: https://jshint.com/
 ![CSS Validator testing](/assets/images/jshint-validator.png)
 
-Lighthouse
+* Lighthouse
 The Lighthouse report returned a good report Performance, Best Practise and SEO returned 100% Accessibility returned 94% on contrast which I am happy to leave as this is a high score.
 ![Lighthouse Validator testing](/assets/images/lighthouse-validation.png)
 
-Notable Bugs
+* Notable Bugs
 In HTML I reviewed all the coding bugs and amended them to pass. Mainly working on the audio code that threw some bugs in.
 On CSS I amended some typos in the code and put best practices in to return a clear validation
 
 
-# TECHNOLOGIES USED
+## TECHNOLOGIES USED
 
 * HTML
 * CSS
@@ -216,7 +217,7 @@ On CSS I amended some typos in the code and put best practices in to return a cl
 `For checking compatibilty, troubleshooting and editing code`
 
 #
-# DEPLOYMENT
+## DEPLOYMENT
 
 * The Game was deployed using GitHub Pages with the following the steps:
 
