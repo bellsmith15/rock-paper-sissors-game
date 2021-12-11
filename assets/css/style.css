@@ -313,6 +313,7 @@ h3 {
         border-radius: 15px;
         background-color: aliceblue;
         left: auto;
+        font-size: 12px;
     }
 
     .scoreboards {
@@ -390,14 +391,20 @@ h3 {
         position: relative;
         background-color: aliceblue;
         text-align: center;
-        right: 50px;
-        width: 94%;
         color: black;
+        margin: 15% auto;
         border: 3px solid black;
+        padding: .5rem;
+        width: 80%;
     }
 
     .win {
         width: 90%;
+        height: 37vh;
+    }
+
+    i {
+        font-size: 0.7rem;
     }
 }
 
