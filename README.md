@@ -246,7 +246,6 @@ The Game was deployed using GitHub Pages with the following the steps:
 * The audio file was found from the pixabay site where the downloads are Royalty free and can be used for sites. https://pixabay.com/music/search/genre/christmas/
 * http://ami.responsivedesign.is/#  was used to display responsiveness on different devices.
 
-### CODE
 
 ## Reference Material
 
