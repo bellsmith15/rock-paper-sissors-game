@@ -29,17 +29,11 @@ My initial idea for the project was to create a game that is simple to use and c
 - [TECHNOLOGIES USED](#technologies-used)
   - [PROGRAMS USED](#programs-used)
 - [DEPLOYMENT](#deployment)
-
-
 - [CREDITS AND REFERENCES](#credits-and-references)
-    - [IMAGES AND INFORMATION](#images-and-information)
-    - [CODE](#code)
+    - [MEDIA AND CONTENT](#media-and-content)
+    - [REFERENCE MATERIAL](#reference-material)
   - [ACKNOWLEDGEMENTS:](#acknowledgements)
       - [RETURN TO THE TOP](#return-to-the-top) -->
-- [CREDITS](#credits-and-references)
-  * [IMAGES AND INFORMATION](#images-and-information)
-  * [CODE](#code) -->
-- [ACKNOWLEDGEMENTS](#acknowledgements)
 
 #
 # UX/UI
@@ -240,11 +234,9 @@ The Game was deployed using GitHub Pages with the following the steps:
     * git push - to push all committed changes to the GitHub repository
 
 
-#
 ## CREDITS AND REFERENCES
 
-
-## Media & Content
+### Media & Content
 
 * The background image of the trees was obtained from Vecteezy.com
 * The audio file was found from the pixabay site where the downloads are Royalty free and can be used for sites. https://pixabay.com/music/search/genre/christmas/
