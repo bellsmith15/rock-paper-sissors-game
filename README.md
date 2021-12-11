@@ -30,7 +30,7 @@ My initial idea for the project was to create a game that is simple to use and c
   - [PROGRAMS USED](#programs-used)
 - [DEPLOYMENT](#deployment)
 - [CREDITS AND REFERENCES](#credits-and-references)
-    - [MEDIA AND CONTENT](#media-and-content)
+  - [MEDIA AND CONTENT](#media-and-content)
     - [REFERENCE MATERIAL](#reference-material)
   - [ACKNOWLEDGEMENTS:](#acknowledgements)
       - [RETURN TO THE TOP](#return-to-the-top) -->
@@ -257,4 +257,4 @@ Acknowledgements
 - My family for their support.
 - Media support on W3 Schools, Stack Overflow, Blogs, Tutorialls online and MDN Weeb docs.
 
-#### RETURN TO THE [TOP](ROCK-PAPER-SCOSSORS)
+#### RETURN TO THE [TOP] (ROCK-PAPER-SCOSSORS)
