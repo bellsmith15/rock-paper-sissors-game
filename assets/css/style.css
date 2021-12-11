@@ -508,6 +508,10 @@ h3 {
         align-content: flex-end;
     }
 
+    .game-area {
+        height: 18vh;
+    }
+
     .choices {
         transform: scale(1.5);
         letter-spacing: 10px;

@@ -3,11 +3,12 @@
  * and possible choices
  */
 const playerChoices = document.getElementsByClassName('choice');
-const roundText = document.getElementById('round-text'); /*resultDisplay*/
+const resultDisplay = document.getElementById('result-display');
 const closeBtn = document.getElementsByClassName('close')[0];
 const winnerModal = document.getElementsByClassName('winner-modal')[0];
 const modalAnswer = document.getElementsByClassName('modal-answer')[0];
-const modalParagraph = document.getElementsByClassName('modal-result')[0];
+const modalDisplay = document.getElementsByClassName('modal-result')[0];
+const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
 
 let playerChoice;
 let computerChoice;
@@ -16,11 +17,7 @@ let computerHTML = document.getElementsByClassName('comp-score')[0];
 let playerScore = 0;
 let computerScore = 0;
 
-const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
-
-
 // https://www.w3schools.com/howto/howto_css_modals.asp
-
 let modal = document.getElementById("myModal"); /* Get modal*/
 let btn = document.getElementById("myBtn"); /* Get button that opens modal*/
 let span = document.getElementsByClassName("shut")[0]; /* Get the <span> element that closes the modal */
@@ -43,8 +40,12 @@ window.onclick = function(event) {
 };
 
 
-
-
+/**
+ * When the user clicks play the music
+ */
+// btn.onclick = function() {
+//     musicSound.play();
+//   };
 
 
 // function playMusic() {
@@ -101,7 +102,7 @@ function playGame(e) {
     playerChoice = e.target.id;
     generateComputerChoice();
     getResult();
-    showWinner(winnerModal, modalAnswer, modalParagraph);
+    showWinner(winnerModal, modalAnswer, modalDisplay);
     musicSound.play();
 }
 
@@ -132,7 +133,7 @@ function getResult() {
         case 'spockscissors':
         case 'spockrock':
             console.log('You win!');
-            roundText.innerHTML = "You Win this Round!"; /*resultDisplay*/
+            resultDisplay.innerHTML = "You Win this Round!";
             incrementPlayerScore(scoreHTML);
             break;
         case 'scissorsrock':
@@ -145,7 +146,7 @@ function getResult() {
         case 'spocklizard':
         case 'scissorsspock':
         case 'rockspock':
-            roundText.innerHTML = "You lose, the Computer Wins this Round!";
+            resultDisplay.innerHTML = "You lose, the Computer Wins this Round!";
             incrementComputerScore(computerHTML);
             break;
         case 'rockrock':
@@ -153,7 +154,7 @@ function getResult() {
         case 'scissorsscissors':
         case 'lizardlizard':
         case 'spockspock':
-            roundText.innerHTML = "Its a Draw!";
+            resultDisplay.innerHTML = "Its a Draw!";
             break;
     }
 }
@@ -167,15 +168,15 @@ function incrementComputerScore(score) {
 }
 
 
-function showWinner(winnerModal, modalAnswer, modalParagraph) {
+function showWinner(winnerModal, modalAnswer, modalDisplay) {
     if (playerScore === 7) {
         winnerModal.style.display = 'block';
         modalAnswer.textContent = 'Winner! You Beat the Computer!';
-        modalParagraph.textContent = `${playerScore} to ${computerScore}`;
+        modalDisplay.textContent = `${playerScore} to ${computerScore}`;
     } else if (computerScore === 7) {
         winnerModal.style.display = 'block';
         modalAnswer.textContent = 'Sorry you Lost this Game!';
-        modalParagraph.textContent = `${computerScore} to ${playerScore}`;
+        modalDisplay.textContent = `${computerScore} to ${playerScore}`;
     }
 }
 
@@ -189,7 +190,7 @@ function resetGame(player, computer) {
     computerScore = 0;
     player.innerHTML = playerScore;
     computer.innerHTML = computerScore;
-    roundText.innerHTML = '';
+    resultDisplay.innerHTML = '';
     document.getElementById('computer-icon').className = '';
 }
 
