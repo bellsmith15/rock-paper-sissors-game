@@ -8,6 +8,7 @@
     content="Play a fun game of Rock Paper Scissors Lizard Spock. Win against the computer by being the first to reach 7 points.">
   <meta name="keywords" content="Rock, Paper, Scissors, Lizard, Spock, Game, JavaScript, Play, Fun ">
   <meta name="author" content="BellSmith">
+
   <!-- Font Awesome and Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,9 +54,6 @@
             <i id="computer-icon" class="far fa-hand-spock"></i>
           </div>
         </div>
-
-        <!--track -->
-
         <div class="winner-modal" style="">
           <div class="modal-content">
             <span class="close">&times;</span>
@@ -92,6 +90,9 @@
       </p>
     </div>
 
+    <audio src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg" controls loop>Your browser does not
+      support the HTML5 Audio element.</audio>
+
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="shut">&times;</span>
@@ -109,48 +110,3 @@
 </body>
 
 </html>
-
-<!-- https://pixabay.com/music/search/genre/christmas/ -->
-
-
-
-<!-- <div class="music-btn">
-        <button class="btn" id="audio">Play Music</button>
-        <i class="fas fa-holly-berry" id="audio" >Play Music</i>
-    </div> -->
-<!-- <button id="start" class="btn">Make this reset button work</button> -->
-
-<!-- <i id="audio" class="fas fa-holly-berry" style="color:darkgreen;">
-        <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg"></i> -->
-
-
-<!-- <audio controls="loop">
-  <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg">
-</audio>
-
-<i id="audio" class="fas fa-holly-berry" style="color:darkgreen;">
-  <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg"></i>
-
-
-<audio id="myAudio">
-  <source src="assets/music/christmas-magic-night-11648.mp3" type="audio/mpeg">Your browser does not support the audio
-  element.
-</audio>
-
-<button onclick="playAudio" type="button">Play</button>
-<button onclick="pauseAudio" type="button">Pause</button>
-
-<script>
-  let music = document.getElementById("myAudio");
-
-  function playAudio() {
-    music.play();
-  }
-
-  function pauseAudio() {
-    music.pause();
-  }
-</script> -->
-
-
-<!-- <button onclick='play'>Play Xmas</button> -->

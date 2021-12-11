@@ -5,7 +5,7 @@
 const playerChoices = document.getElementsByClassName('choice');
 const resultDisplay = document.getElementById('result-display');
 const closeBtn = document.getElementsByClassName('close')[0];
-const winnerModal = document.getElementsByClassName('winner-modal')[0];
+const winnerCheck = document.getElementsByClassName('winner-modal')[0];
 const modalAnswer = document.getElementsByClassName('modal-answer')[0];
 const modalDisplay = document.getElementsByClassName('modal-result')[0];
 const musicSound = new Audio("assets/music/christmas-magic-night-11648.mp3");
@@ -23,65 +23,24 @@ let btn = document.getElementById("myBtn"); /* Get button that opens modal*/
 let span = document.getElementsByClassName("shut")[0]; /* Get the <span> element that closes the modal */
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+btn.onclick = function () {
+    modal.style.display = "block";
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+span.onclick = function () {
+    modal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 };
 
-
 /**
- * When the user clicks play the music
- */
-// btn.onclick = function() {
-//     musicSound.play();
-//   };
-
-
-// function playMusic() {
-//     musicSound.play();
-// }
-
-// function stopMusic() {
-//     musicSound.muted();
-// }
-
-
-// var x = document.getElementById("myAudio"); 
-
-// function playAudio() { 
-//   x.play(); 
-// } 
-
-// function pauseAudio() { 
-//   x.pause(); 
-// } 
-
-
-// let xmas = document.getElementById("myAudio"); 
-        
-// function playAudio() { 
-//   xmas.play(); 
-// } 
-
-// function pauseAudio() { 
-//   xmas.pause(); 
-// } 
-
-
-
-/**
- * Add event listener
+ * Add event listener 
  */
 
 for (let choice of playerChoices) {
@@ -89,7 +48,7 @@ for (let choice of playerChoices) {
 }
 
 closeBtn.addEventListener('click', () => {
-    closeModal(winnerModal);
+    closeModal(winnerCheck);
 });
 
 
@@ -102,10 +61,12 @@ function playGame(e) {
     playerChoice = e.target.id;
     generateComputerChoice();
     getResult();
-    showWinner(winnerModal, modalAnswer, modalDisplay);
-    musicSound.play();
+    showWinner(winnerCheck, modalAnswer, modalDisplay);
 }
 
+/**
+ * Use Math.random to generate the Computerchoice from an array of five choices of hands
+ */
 function generateComputerChoice() {
     const hand = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
     const randomChoice = hand[Math.floor(Math.random() * hand.length)];
@@ -167,14 +128,13 @@ function incrementComputerScore(score) {
     score.innerHTML = ++computerScore;
 }
 
-
-function showWinner(winnerModal, modalAnswer, modalDisplay) {
+function showWinner(winnerCheck, modalAnswer, modalDisplay) {
     if (playerScore === 7) {
-        winnerModal.style.display = 'block';
+        winnerCheck.style.display = 'block';
         modalAnswer.textContent = 'Winner! You Beat the Computer!';
         modalDisplay.textContent = `${playerScore} to ${computerScore}`;
     } else if (computerScore === 7) {
-        winnerModal.style.display = 'block';
+        winnerCheck.style.display = 'block';
         modalAnswer.textContent = 'Sorry you Lost this Game!';
         modalDisplay.textContent = `${computerScore} to ${playerScore}`;
     }
@@ -193,6 +153,3 @@ function resetGame(player, computer) {
     resultDisplay.innerHTML = '';
     document.getElementById('computer-icon').className = '';
 }
-
-
-

@@ -145,7 +145,6 @@ i#computer-icon {
     margin-bottom: 20PX;
 }
 
-
 .rules {
     border: 5px solid;
     border-radius: 15px;
@@ -273,6 +272,7 @@ h3 {
     text-align: center;
 }
 
+
 /* Mobile - Media queries */
 @media only screen and (min-width: 320px) {
     h1.heading {
@@ -377,6 +377,11 @@ h3 {
     i {
         font-size: 0.7rem;
     }
+
+    audio {
+        width: 10rem;
+        border-radius: 90px;
+    }
 }
 
 
@@ -474,6 +479,11 @@ h3 {
     button#myBtn {
         font-size: 25px;
     }
+
+    audio {
+        width: 14rem;
+        border-radius: 90px;
+    }
 }
 
 /* Laptop - Media queries  */
@@ -531,6 +541,11 @@ h3 {
 
     .rules-btn {
         height: 16vh;
+    }
+
+    audio {
+        width: 16rem;
+        border-radius: 90px;
     }
 }
 
@@ -592,5 +607,10 @@ h3 {
         width: 80%;
         height: 25vh;
         margin-left: 11rem;
+    }
+
+    audio {
+        width: 18rem;
+        border-radius: 90px;
     }
 }
