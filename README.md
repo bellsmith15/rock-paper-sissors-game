@@ -30,7 +30,6 @@ My initial idea for the project was to create a game that is simple to use and c
   - [UX/UI](#uxui)
   - [USER STORIES](#user-stories)
   - [FEATURES](#features)
-  - [WIREFRAMES](#wireframes)
   - [DESIGN](#design)
 - [](#-1)
 - [TESTING](#testing)
@@ -118,10 +117,8 @@ Acceptance Criteria:
 Implementation:
 * An icon will be on the page to allow the user to toggle the audio on the game either on or off.
 
-## WIREFRAMES
 The Skeleton Plane
-Wireframe mockups;
-My initial designs for the game were created in Balsamiq, to show how the game would appear across differnt devices. MODALS examples
+My initial thoughts for the design for the game was to have a central area in the middle of the page for the user to play the game. At the top woul dbe a heading with the game title, then a rules of play modal that popped out the instructions for the user.  Underneath this a section for the Players choices nad scores. The next section would be a results area then the last item would be an audio element to an some atmosphere to the Christmas theme.
 
 ## DESIGN
 The Surface Plane
