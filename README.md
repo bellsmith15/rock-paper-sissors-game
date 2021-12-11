@@ -231,7 +231,7 @@ The Game was deployed using GitHub Pages with the following the steps:
 
 * These commands were used for version control during project:
 
-    * git add . `example filename` - to add files before committing
+    * git add . - to add files before committing
     * git commit -m `example message` - to commit changes to the local repository
     * git push - to push all committed changes to the GitHub repository
 
@@ -244,9 +244,10 @@ http://ami.responsivedesign.is/#  is used to display responsiveness on different
 
 ### IMAGE
 
-Media & Content
-The background image of the trees was obtained from Vecteezy.com
-The audio file was found from the pixabay site where the downloads are Royalty free and can be used for sites. https://pixabay.com/music/search/genre/christmas/
+## Media & Content
+
+* The background image of the trees was obtained from Vecteezy.com
+* The audio file was found from the pixabay site where the downloads are Royalty free and can be used for sites. https://pixabay.com/music/search/genre/christmas/
 
 ### CODE
 Reference Material
