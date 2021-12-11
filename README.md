@@ -242,9 +242,9 @@ The Game was deployed using GitHub Pages with the following the steps:
 
 ## Reference Material
 
-W3 Schools was used as a reference point for HTML, CSS and JavaScript
-Full Stack Overflow was used as a source of reference
-MDN Web Docs was also used as a reference point for HTML, CSS and JavaScript
+* W3 Schools was used as a reference point for HTML, CSS and JavaScript
+* Full Stack Overflow was used as a source of reference
+* MDN Web Docs was also used as a reference point for HTML, CSS and JavaScript
 
 ## ACKNOWLEDGEMENTS:
 
