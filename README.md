@@ -43,7 +43,8 @@ My initial idea for the project was to create a game that is simple to use and c
 
 #
 # UX/UI
-The Strategy Plane
+
+## The Strategy Plane
 Rock-Paper-Scissors-Lizard-Spock Game is intended to be a light hearted game for an individual to play for a short period of time. 
 
 Site Goals
