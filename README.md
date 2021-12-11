@@ -30,10 +30,9 @@ My initial idea for the project was to create a game that is simple to use and c
   - [PROGRAMS USED](#programs-used)
 - [DEPLOYMENT](#deployment)
 - [CREDITS AND REFERENCES](#credits-and-references)
-  - [MEDIA AND CONTENT](#media-and-content)
-    - [REFERENCE MATERIAL](#reference-material)
-  - [ACKNOWLEDGEMENTS:](#acknowledgements)
-      - [RETURN TO THE TOP](#return-to-the-top) -->
+  - [REFERENCE MATERIAL](#reference-material)
+- [ACKNOWLEDGEMENTS:](#acknowledgements)
+  - [RETURN TO THE TOP](#return-to-the-top) -->
 
 #
 # UX/UI
@@ -236,8 +235,6 @@ The Game was deployed using GitHub Pages with the following the steps:
 
 ## CREDITS AND REFERENCES
 
-### Media & Content
-
 * The background image of the trees was obtained from Vecteezy.com
 * The audio file was found from the pixabay site where the downloads are Royalty free and can be used for sites. https://pixabay.com/music/search/genre/christmas/
 * http://ami.responsivedesign.is/#  was used to display responsiveness on different devices.
@@ -249,9 +246,8 @@ W3 Schools was used as a reference point for HTML, CSS and JavaScript
 Full Stack Overflow was used as a source of reference
 MDN Web Docs was also used as a reference point for HTML, CSS and JavaScript
 
-#
 ## ACKNOWLEDGEMENTS:
-Acknowledgements
+
 - My Mentor for encouraging me to research audio and animation references and the advice given for improving the site.
 - Code Institute for the Tutors on the course.
 - My family for their support.
