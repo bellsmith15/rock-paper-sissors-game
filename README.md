@@ -238,21 +238,20 @@ The Game was deployed using GitHub Pages with the following the steps:
 
 #
 ## CREDITS AND REFERENCES
-Credits
 
-http://ami.responsivedesign.is/#  is used to display responsiveness on different devices.
-
-### IMAGE
 
 ## Media & Content
 
 * The background image of the trees was obtained from Vecteezy.com
 * The audio file was found from the pixabay site where the downloads are Royalty free and can be used for sites. https://pixabay.com/music/search/genre/christmas/
+* http://ami.responsivedesign.is/#  was used to display responsiveness on different devices.
 
 ### CODE
-Reference Material
+
+## Reference Material
+
 W3 Schools was used as a reference point for HTML, CSS and JavaScript
-Ful
+Full Stack Overflow was used as a source of reference
 MDN Web Docs was also used as a reference point for HTML, CSS and JavaScript
 
 #
