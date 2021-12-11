@@ -64,7 +64,7 @@ User Stories
 - As a user, I want to be notified if I have won or lost the game.
 - As a user, I want to be able to pause or play the game audio.
 
-## FEATURES
+# FEATURES
 
 ## The Scope Plane
 
